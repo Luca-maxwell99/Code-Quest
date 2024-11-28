@@ -38,20 +38,20 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
     font-size: 3rem;
     color: var(--light-beige);
+    
+
 }
 
 li {
-    
-    padding: 20px;
     font-size: 4rem;
 }
 
 #house-icon {
     color: var(--light-beige);
     font-size: 5rem;
+    padding: 2rem;
 }
 
 #instructions {
@@ -60,6 +60,10 @@ li {
     font-family: var(--secondary-font);
     text-transform: uppercase;
     letter-spacing: .4rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 3px solid var(--light-beige);
+    border-radius: 10px;
 }
 
 /* nav a {
