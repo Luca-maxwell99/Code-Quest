@@ -1,5 +1,5 @@
 # Code Quest
-![Code Quest header](assets/...)
+![Code Quest header](assets/images/code-quest-header.webp)
 
 ## Introduction 
 
@@ -36,12 +36,12 @@ The user stories for this project as well as their acceptance criteria and tasks
 The wireframes for this project were created using Canva to map out the structure of the site on both mobile and desktop view. Doing so helped to guide the development of the site and how the quiz interface would best suit the user.
 
 #### Mobile
-![Wireframe of mobile view](assets/...)
+![Wireframe of mobile view](assets/images/code-quest-mobile-wireframes.webp)
 #### Desktop
-![Wireframe of desktop view](assets/...)
+![Wireframe of desktop view](assets/images/code-quest-desktop-wireframes.webp)
 
 ### Branding
-![Branding slide for period professionals](assets/...)
+![Branding slide for period professionals](assets/images/code-quest-branding.webp)
 
 #### Fonts
 
@@ -51,13 +51,13 @@ This project used 'Mulish' as the heading font and 'Space Mono' as the body font
 
 The colour palette for Code Quest was chosen to create a visually appealing and user-friendly experience. The site offers both a light and dark mode within the colour palette to ensure the interface is easy on the eyes and accessible to a wide range of users. The charater's colours add a touch of personality to the design, while the core palette provides a clear and readable interface.
 
-![Colour palette](assets/...)
+![Colour palette](assets/images/code-quest-palette.webp)
 
 #### Imagery
 
 All imagery for Code Quest came from Canva. The main graphic is of the Code Quest character for visual interest, and the other icons were kept simple to not complicate the site and have the quiz be the focus.
 
-![Tips icons](assets/...)
+![Images used](assets/...)
 
 ### Responsiveness
 
