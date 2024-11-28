@@ -11,6 +11,10 @@ Code Quest is an engaging online quiz designed to test and enhance understanding
 
 <a href="https://..." target="_blank">View the live project here.</a>
 
+## Agile
+
+...
+
 ## UX Design
 
 #### Site Owner’s Goal
@@ -92,12 +96,14 @@ All imagery for Code Quest came from Canva. The main graphic is of the Code Ques
 
 * ...
 
+## Technologies
+
+### AI
+...
+
 ## Testing
 
 To ensure the success of the site there was testing and debugging carried out throughout the process both manually and with external tools. This process means that the site is now successfully deployed and has passed testing.
-
-### AI Debugging
-... 
 
 ### Validator Testing
 ...
