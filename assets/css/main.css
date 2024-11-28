@@ -1,11 +1,36 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* CSS Variables */
+:root {
+    --primary-font: "Mulish", sans-serif;
+    --secondary-font: "Space Mono", sans-serif;
+    --dark-blue: #073b4c;
+    --light-beige: #fffcf6;
+    --medium-blue: #2b63ad;
+    --medium-green: #28b465;
+    --highlight-yellow: #e8d525;
+    --highlight-red: #dd2e44;
+    --black: #000000;
+    --white: #ffffff;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+    color:var(--light-beige);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
 
 body {
-    background-color: #073b4c;
-    color:#fffcf6;
+    background-color: var(--dark-blue);
+    color:var(--light-beige);
     font-family: "Mulish", sans-serif;
 }
 
@@ -13,18 +38,40 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
     font-size: 3rem;
+    color: var(--light-beige);
+    
+
 }
 
 li {
-    
-    padding: 20px;
+    font-size: 4rem;
 }
 
-nav a {
-    color: white;
+#house-icon {
+    color: var(--light-beige);
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+#instructions {
+    color:var(--light-beige);
     text-decoration: none;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 3px solid var(--highlight-yellow);
+    border-radius: 10px;
+}
+
+/* nav a {
+    color:var(--light-beige);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: .4rem; */
 }
 
 h1, h3, h2 {
@@ -83,7 +130,7 @@ input[type="text"], select {
 }
 
 /* Button Styles */
-button {
+#play-button {
     background-color: #333;
     color: white;
     padding: 12px 20px;
@@ -94,7 +141,7 @@ button {
     width: 100%; /* Make button full width on small screens */
 }
 
-button:hover {
+#play-button:hover {
     background-color: #555;
 }
 
@@ -128,23 +175,128 @@ button:hover {
 /* Footer Styles */
 
 
-/* make a media querey for tablets */
+/* Quiz page */
 
-@media screen and (max-width: 768px) {
+h1 {
+    font-size: 5.4rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+#question {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: .1rem;
+}
+
+.character-image {
+    max-width: 30vh;
+}
+
+.quiz-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.answer-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--medium-blue);
+    font-size: 4rem;
+    min-width: 80rem;
+    border: 2px solid var(--light-beige);
+    color: var(--white);
+    align-items: center;
+    cursor: pointer;
+}
+
+.answer-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.answer-letter {
+    padding: 2rem 2.5rem;
+    color: #fff;
+}
+
+answer-option {
+    width: 100%;
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align Back and Next buttons */
+    width: 100%; /* Stretch the container to the full width of its parent */
+    margin-top: 2rem; /* Add spacing above the buttons */
+}
+
+.back-button, .next-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 15rem;
+    background-color: var(--highlight-yellow);
+    border: 2px solid var(--highlight-yellow);
+}
+
+.back-button:hover, .next-button:hover {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 15rem;
+    background-color: var(--dark-blue);
+    border: 2px solid var(--highlight-yellow);
+}
+
+#quiz-back {
+    font-size: 3rem;
+    text-align: left;
+    color: var(--dark-blue);
+}
+#quiz-forward {
+    font-size: 3rem;
+    text-align: right;
+    color: var(--dark-blue);
+}
+
+#quiz-forward:hover,
+#quiz-back:hover {
+    color: var(--highlight-yellow);
+}
+
+
+/* make a media query for tablets */
+
+/* @media screen and (max-width: 768px) {
     h1, h2, h3 {
         font-size: 2rem;
     }
 
     li {
-    font-size: 1.5rem;
-        padding: 20px;
-        text-decoration: underline;
-    }
+        font-size: 1.5rem;
+            padding: 20px;
+            text-decoration: underline;
+        }
 
-}
-
-
-
+} */
 
 
 
