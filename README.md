@@ -19,7 +19,7 @@ To create an engaging online quiz that helps beginner coders solidify their unde
 
 ### User Stories
 
-The user stories for this project as well as their acceptance criteria and tasks can be found in the <a href="https://...)" target="_blank">project board</a>.
+The user stories for this project as well as their acceptance criteria and tasks can be found in the <a href="https://github.com/users/Luca-maxwell99/projects/4/views/1" target="_blank">project board</a>.
 
 * As a beginner student, I want to select a quiz topic (HTML, CSS, or JavaScript) so that I can test my knowledge in a specific area.
 * As a beginner student, I want to have a responsive design so that I can take the quiz on different devices like desktop, tablet, and mobile.
@@ -33,7 +33,8 @@ The user stories for this project as well as their acceptance criteria and tasks
 
 ### Wireframes
 
-...
+The wireframes for this project were created using Canva to map out the structure of the site on both mobile and desktop view. Doing so helped to guide the development of the site and how the quiz interface would best suit the user.
+
 #### Mobile
 ![Wireframe of mobile view](assets/...)
 #### Desktop
@@ -44,17 +45,17 @@ The user stories for this project as well as their acceptance criteria and tasks
 
 #### Fonts
 
-...
+This project used 'Mulish' as the heading font and 'Space Mono' as the body font. Both of these are available via Google Fonts and there is a backup font of 'sans-serif'.
 
 #### Colour Palette
 
-...
+The colour palette for Code Quest was chosen to create a visually appealing and user-friendly experience. The site offers both a light and dark mode within the colour palette to ensure the interface is easy on the eyes and accessible to a wide range of users. The charater's colours add a touch of personality to the design, while the core palette provides a clear and readable interface.
 
 ![Colour palette](assets/...)
 
 #### Imagery
 
-...
+All imagery for Code Quest came from Canva. The main graphic is of the Code Quest character for visual interest, and the other icons were kept simple to not complicate the site and have the quiz be the focus.
 
 ![Tips icons](assets/...)
 
