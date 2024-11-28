@@ -62,7 +62,7 @@ li {
     letter-spacing: .4rem;
     margin: 2rem;
     padding: 1.5rem;
-    border: 3px solid var(--light-beige);
+    border: 3px solid var(--highlight-yellow);
     border-radius: 10px;
 }
 
@@ -184,7 +184,7 @@ h1 {
 }
 
 #question {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 4rem;
     letter-spacing: .1rem;
 }
@@ -216,7 +216,7 @@ h1 {
     display: flex;
     margin-bottom: 1.5rem;
     width: 100%;
-    border-radius: 7px;
+    border-radius: 10px;
     background: var(--medium-blue);
     font-size: 4rem;
     min-width: 80rem;
@@ -285,7 +285,7 @@ answer-option {
 
 /* make a media query for tablets */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     h1, h2, h3 {
         font-size: 2rem;
     }
@@ -296,10 +296,7 @@ answer-option {
             text-decoration: underline;
         }
 
-}
-
-
-
+} */
 
 
 
