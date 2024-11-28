@@ -71,8 +71,8 @@ li {
     text-decoration: none;
     font-family: var(--secondary-font);
     text-transform: uppercase;
-    letter-spacing: .4rem; */
-}
+    letter-spacing: .4rem; 
+}*/
 
 h1, h3, h2 {
     display: flex;
@@ -96,17 +96,7 @@ main {
     align-items: center;
 }
 
-#game-selection {
-    text-align: center; /* Center the content within the section */
-    display: flex;
-    justify-content: center;
-    
-}
 
-#game-selection h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
 
 /* Form Styling */
 .form-group {
