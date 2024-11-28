@@ -130,7 +130,7 @@ input[type="text"], select {
 }
 
 /* Button Styles */
-button {
+#play-button {
     background-color: #333;
     color: white;
     padding: 12px 20px;
@@ -141,7 +141,7 @@ button {
     width: 100%; /* Make button full width on small screens */
 }
 
-button:hover {
+#play-button:hover {
     background-color: #555;
 }
 
@@ -214,7 +214,7 @@ h1 {
 
 .answer-container {
     display: flex;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     border-radius: 7px;
     background: var(--medium-blue);
@@ -224,6 +224,10 @@ h1 {
     color: var(--white);
     align-items: center;
     cursor: pointer;
+}
+
+.answer-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .answer-letter {
@@ -249,22 +253,33 @@ answer-option {
     border-radius: 10px;
     cursor: pointer;
     max-width: 15rem;
-    background-color: var(--dark-blue);
+    background-color: var(--highlight-yellow);
+    border: 2px solid var(--highlight-yellow);
 }
 
 .back-button:hover, .next-button:hover {
     padding: 1rem 2rem;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
     max-width: 15rem;
-    background-color: var(--medium-green);
+    background-color: var(--dark-blue);
+    border: 2px solid var(--highlight-yellow);
 }
 
-#quiz-back,
+#quiz-back {
+    font-size: 3rem;
+    text-align: left;
+    color: var(--dark-blue);
+}
 #quiz-forward {
     font-size: 3rem;
-    color: var(--light-beige);
+    text-align: right;
+    color: var(--dark-blue);
+}
+
+#quiz-forward:hover,
+#quiz-back:hover {
+    color: var(--highlight-yellow);
 }
 
 
