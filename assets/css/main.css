@@ -189,6 +189,10 @@ h1 {
     letter-spacing: .1rem;
 }
 
+.character-image {
+    max-width: 30vh;
+}
+
 .quiz-container {
     width: 100vw;
     display: flex;
@@ -219,6 +223,7 @@ h1 {
     border: 2px solid var(--light-beige);
     color: var(--white);
     align-items: center;
+    cursor: pointer;
 }
 
 .answer-letter {
@@ -229,6 +234,37 @@ h1 {
 answer-option {
     width: 100%;
     display: flex;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align Back and Next buttons */
+    width: 100%; /* Stretch the container to the full width of its parent */
+    margin-top: 2rem; /* Add spacing above the buttons */
+}
+
+.back-button, .next-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 15rem;
+    background-color: var(--dark-blue);
+}
+
+.back-button:hover, .next-button:hover {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 15rem;
+    background-color: var(--medium-green);
+}
+
+#quiz-back,
+#quiz-forward {
+    font-size: 3rem;
+    color: var(--light-beige);
 }
 
 
