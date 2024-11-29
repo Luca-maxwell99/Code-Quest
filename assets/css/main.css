@@ -84,17 +84,7 @@ h1, h3, h2 {
 }
 
 /* Main Content Styles */
-main {
-    width: 80%; /* Allow the main section to take up full width */
-    max-width: 100%; /* Limit the width for larger screens */
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #2b63ad;
-    border-radius: 8px;
-    display: flex;
-   flex-direction: column;
-    align-items: center;
-}
+
 
 
 
@@ -163,6 +153,8 @@ input[type="text"], select {
     margin: 20px auto;
     text-decoration: none;
 }
+
+
 /* Footer Styles */
 
 
