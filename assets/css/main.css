@@ -11,6 +11,8 @@
     --medium-green: #28b465;
     --highlight-yellow: #e8d525;
     --highlight-red: #dd2e44;
+    --red-background: #A91A2D;
+    --green-background: #126536;
     --black: #000000;
     --white: #ffffff;
 }
@@ -208,6 +210,14 @@ h1 {
     color: var(--white);
     align-items: center;
     cursor: pointer;
+}
+
+#correct-answer {
+    background: var(--green-background);
+}
+
+#incorrect-answer {
+    background: var(--red-background);
 }
 
 .answer-container:hover {
