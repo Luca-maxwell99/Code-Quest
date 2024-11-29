@@ -153,6 +153,7 @@ h2 {
     font-size: 3rem; /* Larger font size for better readability */
     text-transform: uppercase; /* Uppercase text */
     letter-spacing: 0.5rem; /* More spacing between letters */
+    font-family: var(--secondary-font);
 }
 
 .home-item-container:hover {
@@ -400,7 +401,7 @@ answer-option {
 
 } */
 
-/* Media Query for Screens Below 780px */
+/* Homepage Media Query for Screens Below 780px */
 @media (max-width: 780px) {
     #main-title {
         font-size: 6rem; /* Reduce font size proportionally */
