@@ -578,9 +578,10 @@ h1 {
         font-size: 1.5rem;
         padding: 0.75rem;
     }
+}
 
     /* Tablets */
-    @media (min-width: 577px) and (max-width: 768px) {
+    @media (min-width: 577px) and (max-width: 880px) {
         h1 {
             font-size: 3rem;
         }
@@ -617,7 +618,7 @@ h1 {
     }
 
     /* Small desktops */
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media (min-width: 880px) and (max-width: 1024px) {
         h1 {
             font-size: 4rem;
         }
