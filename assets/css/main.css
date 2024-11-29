@@ -23,7 +23,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: 'Mulish', sans-serif;
-    color:var(--light-beige);
+    color: var(--light-beige);
 }
 
 p {
@@ -32,7 +32,7 @@ p {
 
 body {
     background-color: var(--dark-blue);
-    color:var(--light-beige);
+    color: var(--light-beige);
     font-family: "Mulish", sans-serif;
 }
 
@@ -42,7 +42,7 @@ nav ul {
     justify-content: space-between;
     font-size: 3rem;
     color: var(--light-beige);
-    
+
 
 }
 
@@ -57,7 +57,7 @@ li {
 }
 
 #instructions {
-    color:var(--light-beige);
+    color: var(--light-beige);
     text-decoration: none;
     font-family: var(--secondary-font);
     text-transform: uppercase;
@@ -76,16 +76,97 @@ li {
     letter-spacing: .4rem; 
 }*/
 
-h1, h3, h2 {
+h1,
+h3,
+h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#fffcf6;
+    color: #fffcf6;
     font-size: 3rem;
 
 }
 
 /* Main Content Styles */
+
+/* Homepage */
+
+#main-title {
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    letter-spacing: 1.2rem;
+    font-weight: 600;
+}
+
+
+#main-subheading {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+#language-choice {
+    margin-bottom: 3rem;
+    font-family: var(--primary-font);
+    letter-spacing: .1rem;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers content vertically within the column */
+    align-items: center; /* Centers content horizontally within the column */
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100%; /* Ensures it fills the height of the column */
+    text-align: center; /* Ensures text is centered */
+}
+
+#homepage-columns {
+    padding-top: 5rem;
+}
+
+.home-item-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally inside the rectangle */
+    align-items: center; /* Centers content vertically inside the rectangle */
+    margin-bottom: 1.5rem;
+    max-width: 25rem;
+    width: 100%; /* Ensures consistency in size */
+    border-radius: 10px;
+    background: var(--medium-blue);
+    font-size: 4rem;
+    border: 2px solid var(--light-beige);
+    color: var(--white);
+    cursor: pointer;
+    text-align: center; /* Centers text */
+    padding: 1rem; /* Adds padding for better visual spacing */
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+.home-item-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: var(--medium-green);
+}
+
+.home-item-option {
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#homepage-image {
+    max-width: 75%; /* Ensures the image doesn’t exceed the column width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes any inline spacing */
+    margin: 0 auto; /* Centers the image */
+    object-fit: contain; /* Ensures the image fits within the defined dimensions without cropping */
+}
 
 
 
@@ -102,13 +183,15 @@ label {
     margin-bottom: 8px;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
     width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    margin-bottom: 10px; /* Add space between input fields */
+    margin-bottom: 10px;
+    /* Add space between input fields */
 }
 
 /* Button Styles */
@@ -121,7 +204,8 @@ input[type="text"], select {
     border-radius: 4px;
     cursor: pointer;
     font-size: 2.1rem;
-    width: 50%; /* Make button full width on small screens */
+    width: 50%;
+    /* Make button full width on small screens */
 }
 
 #play-button:hover {
@@ -151,6 +235,7 @@ input[type="text"], select {
     width: 15%;
     text-align: center;
 }
+
 .retry-button {
     display: block;
     margin: 20px auto;
@@ -221,7 +306,8 @@ h1 {
 }
 
 .answer-container:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
 }
 
 .answer-letter {
@@ -236,12 +322,16 @@ answer-option {
 
 .button-container {
     display: flex;
-    justify-content: space-between; /* Align Back and Next buttons */
-    width: 100%; /* Stretch the container to the full width of its parent */
-    margin-top: 2rem; /* Add spacing above the buttons */
+    justify-content: space-between;
+    /* Align Back and Next buttons */
+    width: 100%;
+    /* Stretch the container to the full width of its parent */
+    margin-top: 2rem;
+    /* Add spacing above the buttons */
 }
 
-.back-button, .next-button {
+.back-button,
+.next-button {
     padding: 1rem 2rem;
     border: none;
     border-radius: 10px;
@@ -251,7 +341,8 @@ answer-option {
     border: 2px solid var(--highlight-yellow);
 }
 
-.back-button:hover, .next-button:hover {
+.back-button:hover,
+.next-button:hover {
     padding: 1rem 2rem;
     border-radius: 10px;
     cursor: pointer;
@@ -265,6 +356,7 @@ answer-option {
     text-align: left;
     color: var(--dark-blue);
 }
+
 #quiz-forward {
     font-size: 3rem;
     text-align: right;
@@ -292,7 +384,31 @@ answer-option {
 
 } */
 
+/* Media Query for Screens Below 780px */
+@media (max-width: 780px) {
+    #main-title {
+        font-size: 6rem; /* Reduce font size proportionally */
+        letter-spacing: 0.8rem; /* Adjust letter spacing */
+        text-align: center; /* Force text to center-align */
+        margin: 0 auto; /* Ensure it's centered */
+    }
 
+    #main-subheading {
+        font-size: 2.5rem; /* Reduce font size */
+        letter-spacing: 0.3rem; /* Adjust letter spacing */
+        text-align: center; /* Force text to center-align */
+        margin: 0 auto; /* Ensure it's centered */
+    }
 
+    #homepage-columns {
+        flex-direction: column-reverse; /* Stack image below text containers */
+    }
 
+    #homepage-image {
+        max-width: 90%; /* Slightly larger image for smaller screens */
+    }
 
+    .home-item-container {
+        font-size: 3rem; /* Adjust rectangle text size */
+    }
+}
