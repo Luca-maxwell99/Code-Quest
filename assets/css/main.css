@@ -137,10 +137,6 @@ h2 {
     padding: 1.5rem 2.5rem; /* Increase padding for more space inside the button */
     border-radius: 12px; /* Slightly larger border-radius for a more prominent button */
     background: var(--medium-blue); /* Background color */
-    color: var(--white); /* Text color */
-    font-size: 3rem; /* Larger font size for better readability */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 0.5rem; /* More spacing between letters */
     border: 2px solid var(--light-beige); /* Border color */
     cursor: pointer; /* Pointer cursor on hover */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
@@ -149,6 +145,14 @@ h2 {
 .home-item-button:hover {
     transform: scale(1.1); /* Slightly enlarge button on hover */
     background: var(--medium-green); /* Change background color on hover */
+}
+
+.button-link {
+    text-decoration: none;
+    color: var(--white); /* Text color */
+    font-size: 3rem; /* Larger font size for better readability */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 0.5rem; /* More spacing between letters */
 }
 
 .home-item-container:hover {
