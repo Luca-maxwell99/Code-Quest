@@ -36,14 +36,26 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
+h1,
+h3,
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffcf6;
+    font-size: 3rem;
+
+}
+
+/* Main Content Styles */
+/* Navbar*/
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     font-size: 3rem;
     color: var(--light-beige);
-
-
 }
 
 li {
@@ -51,9 +63,9 @@ li {
 }
 
 #house-icon {
-    color: var(--light-beige);
+    color: var(--highlight-yellow);
     font-size: 5rem;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
 #modal-icon {
@@ -70,31 +82,11 @@ li {
     text-transform: uppercase;
     letter-spacing: .4rem;
     margin: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 3px solid var(--highlight-yellow);
     border-radius: 10px;
+    font-size: 2rem;
 }
-
-/* nav a {
-    color:var(--light-beige);
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    text-transform: uppercase;
-    letter-spacing: .4rem; 
-}*/
-
-h1,
-h3,
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fffcf6;
-    font-size: 3rem;
-
-}
-
-/* Main Content Styles */
 
 /* Homepage */
 
@@ -258,7 +250,6 @@ select {
     cursor: pointer;
     font-size: 2.1rem;
     width: 50%;
-    /* Make button full width on small screens */
 }
 
 #play-button:hover {
@@ -321,7 +312,6 @@ select {
     color: var(--dark-blue);
     font-size: 2rem;
     text-transform: uppercase;
-    /* Uppercase text */
     letter-spacing: 0.5rem;
     /* More spacing between letters */
     font-family: var(--secondary-font);
@@ -464,7 +454,7 @@ h1 {
 #exampleModalLabel {
     font-size: 3.4rem;
     margin-top: 30px;
- 
+
 }
 
 .modal-body {
@@ -473,9 +463,8 @@ h1 {
     justify-content: center;
 }
 
-
-
 /*Homepage Media Queries*/
+
 /* Media Query for Screens Below 780px */
 @media (max-width: 780px) {
     #main-title {
@@ -508,12 +497,10 @@ h1 {
     #homepage-image {
         max-width: 90%;
         max-height: 250px;
-        /* Slightly larger image for smaller screens */
     }
 
     .home-item-container {
         font-size: 3rem;
-        /* Adjust rectangle text size */
     }
 }
 
@@ -554,120 +541,128 @@ h1 {
     #quiz-forward {
         font-size: 3rem;
     }
-}
 
-/* Tablets */
-@media (min-width: 577px) and (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    #question {
-        font-size: 3rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .quiz-container {
-        padding: 3rem;
-    }
-
-    .answer-container {
-        font-size: 4rem;
-        padding: 1.5rem;
-        min-width: 0;
-    }
-
-    .answer-letter {
-        padding: 1.5rem;
-    }
-
-    .back-button,
-    .next-button {
-        padding: 0.75rem 1.5rem;
-        max-width: 15rem;
-    }
-
-    #quiz-back,
-    #quiz-forward {
-        font-size: 3rem;
-    }
-}
-
-/* Small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    h1 {
+    #house-icon {
         font-size: 4rem;
     }
 
-    #question {
-        font-size: 3rem;
-        margin-bottom: 3rem;
+    #instructions {
+        font-size: 1.5rem;
+        padding: 0.75rem;
     }
 
-    .quiz-container {
-        padding: 3rem;
+    /* Tablets */
+    @media (min-width: 577px) and (max-width: 768px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        #question {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .quiz-container {
+            padding: 3rem;
+        }
+
+        .answer-container {
+            font-size: 4rem;
+            padding: 1.5rem;
+            min-width: 0;
+        }
+
+        .answer-letter {
+            padding: 1.5rem;
+        }
+
+        .back-button,
+        .next-button {
+            padding: 0.75rem 1.5rem;
+            max-width: 15rem;
+        }
+
+        #quiz-back,
+        #quiz-forward {
+            font-size: 3rem;
+        }
     }
 
-    .answer-container {
-        font-size: 4rem;
-        padding: 2rem;
-        min-width: 0;
+    /* Small desktops */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        h1 {
+            font-size: 4rem;
+        }
+
+        #question {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .quiz-container {
+            padding: 3rem;
+        }
+
+        .answer-container {
+            font-size: 4rem;
+            padding: 2rem;
+            min-width: 0;
+        }
+
+        .answer-letter {
+            padding: 2rem;
+        }
+
+        .back-button,
+        .next-button {
+            padding: 1rem 2rem;
+            max-width: 15rem;
+        }
+
+        #quiz-back,
+        #quiz-forward {
+            font-size: 3rem;
+        }
     }
 
-    .answer-letter {
-        padding: 2rem;
+    /*Results Page Media Queries*/
+    /* Media Queries for Quiz Page*/
+
+    /* Mobile phones */
+    @media (max-width: 576px) {
+        .results-container {
+            padding: 3rem;
+        }
+
+        .score-container {
+            font-size: 3rem;
+            padding: 1rem;
+            min-width: 0;
+        }
     }
 
-    .back-button,
-    .next-button {
-        padding: 1rem 2rem;
-        max-width: 15rem;
+    /* Tablets */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .results-container {
+            padding: 3rem;
+        }
+
+        .score-container {
+            font-size: 4rem;
+            padding: 1.5rem;
+            min-width: 0;
+        }
     }
 
-    #quiz-back,
-    #quiz-forward {
-        font-size: 3rem;
-    }
-}
+    /* Small desktops */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .results-container {
+            padding: 3rem;
+        }
 
-/*Results Page Media Queries*/
-/* Media Queries for Quiz Page*/
-
-/* Mobile phones */
-@media (max-width: 576px) {
-    .results-container {
-        padding: 3rem;
+        .score-container {
+            font-size: 4rem;
+            padding: 2rem;
+            min-width: 0;
+        }
     }
-
-    .score-container {
-        font-size: 3rem;
-        padding: 1rem;
-        min-width: 0;
-    }
-}
-
-/* Tablets */
-@media (min-width: 577px) and (max-width: 768px) {
-    .results-container {
-        padding: 3rem;
-    }
-
-    .score-container {
-        font-size: 4rem;
-        padding: 1.5rem;
-        min-width: 0;
-    }
-}
-
-/* Small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .results-container {
-        padding: 3rem;
-    }
-
-    .score-container {
-        font-size: 4rem;
-        padding: 2rem;
-        min-width: 0;
-    }
-}
