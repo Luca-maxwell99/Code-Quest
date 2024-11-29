@@ -16,6 +16,8 @@
 </head>
 
 <body>
+      
+
       <!-- Header Section -->
       <header>
         <nav>
@@ -26,23 +28,78 @@
         </nav>
     </header>
 
+
     <!-- Title section -->
     <section>
-        <h1>Code Quest</h1>
-        <img>
-    </section>
 
-   <section>
 
-    <div class="quiz-container">
+    <!--<div class="quiz-container">
         <div id="sign-in" class="justify-center flex-column">
-            <h2>Front-end Fundamentals</h2>
-                
+            <div>
+                <h1>Code Quest</h1>
+                <h2>Front-end Fundamentals</h2>
+            </div>
+            <div>
+                <h3>Choose your language</h3>
+                <div class="answer-container">
+                    <p class="answer-option">HTML</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">CSS</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">JavaScript</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">Enter your username</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">Play</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> -->
+
 
    </section>
-      
+
+
+   <div>
+    <h1 id="main-title">Code Quest</h1>
+    <h2 id="main-subheading">Front-end Fundamentals</h2>
+</div>
+
+
+   <div class="container">
+    <div class="row align-items-center">
+        <!-- Quiz Section -->
+        <div class="col-md-6">
+            <div class="homepage-container">
+                <div id="sign-in" class="justify-center flex-column">
+                    <div>
+                        <h3>Choose your language</h3>
+                        <div class="home-item-container">
+                            <p class="home-item-option">HTML<i class="fa-solid fa-play"></i></p>
+                        </div>
+                        <div class="home-item-container">
+                            <p class="home-item-option">CSS<i class="fa-solid fa-play"></i></p>
+                        </div>
+                        <div class="home-item-container">
+                            <p class="home-item-option">JavaScript<i class="fa-solid fa-play"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Picture Section -->
+        <div class="col-md-6 d-none d-md-block">
+            <img src="assets/images/code-quest-mascot.webp" id="homepage-image" alt="Quiz Illustration" class="img-fluid">
+        </div>
+    </div>
+</div>
+
 
 
 
