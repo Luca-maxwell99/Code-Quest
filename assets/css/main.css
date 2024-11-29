@@ -105,61 +105,64 @@ h2 {
     letter-spacing: .4rem;
 }
 
+#language-choice {
+    margin-bottom: 3rem;
+    font-family: var(--primary-font);
+    letter-spacing: .1rem;
+}
+
 .homepage-container {
-    width: 50vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers content vertically within the column */
+    align-items: center; /* Centers content horizontally within the column */
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+    height: 100%; /* Ensures it fills the height of the column */
+    text-align: center; /* Ensures text is centered */
 }
 
 .home-item-container {
     display: flex;
+    justify-content: center; /* Centers content horizontally inside the rectangle */
+    align-items: center; /* Centers content vertically inside the rectangle */
     margin-bottom: 1.5rem;
-    width: 100%;
+    max-width: 25rem;
+    width: 100%; /* Ensures consistency in size */
     border-radius: 10px;
     background: var(--medium-blue);
     font-size: 4rem;
-    min-width: 80rem;
     border: 2px solid var(--light-beige);
     color: var(--white);
-    align-items: center;
     cursor: pointer;
+    text-align: center; /* Centers text */
+    padding: 1rem; /* Adds padding for better visual spacing */
+    text-transform: uppercase;
+    letter-spacing: .4rem;
 }
 
 .home-item-container:hover {
-    transform: scale(1.05);
-    /* Slightly enlarge on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: var(--medium-green);
 }
 
 .home-item-option {
-    width: 100%;
     display: flex;
-}
-
-.home-item-container {
-    display: flex;
-    margin-bottom: 1.5rem;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
     width: 100%;
-    border-radius: 10px;
-    background: var(--medium-blue);
-    font-size: 4rem;
-    min-width: 80rem;
-    border: 2px solid var(--light-beige);
-    color: var(--white);
-    align-items: center;
-    cursor: pointer;
+    text-align: center;
 }
 
 #homepage-image {
     max-width: 75%; /* Ensures the image doesn’t exceed the column width */
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes any inline spacing */
-    margin: 0 auto; /* Centers the image if needed */
+    margin: 0 auto; /* Centers the image */
     object-fit: contain; /* Ensures the image fits within the defined dimensions without cropping */
 }
+
 
 
 
