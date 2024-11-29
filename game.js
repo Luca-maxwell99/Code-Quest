@@ -90,7 +90,7 @@ let questions = [
         choice3: 'inline-block',
         choice4: 'none',
         answer: 2,
-    },
+    }
 ]
 
 const SCORE_POINTS = 100
