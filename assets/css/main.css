@@ -385,6 +385,26 @@ answer-option {
     color: var(--highlight-yellow);
 }
 
+.modal-content {
+    background-color: #2b63ad;
+    color: var(--light-beige);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid var(--light-beige);
+}
+
+#exampleModalLabel {
+    font-size: 3.4rem;
+    margin-top: 30px;
+ 
+}
+
+.modal-body {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
 
 /* make a media query for tablets */
 
