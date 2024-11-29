@@ -197,7 +197,7 @@ h2 {
 }
 
 #homepage-image {
-    max-width: 75%;
+    max-width: 70%;
     /* Ensures the image doesn’t exceed the column width */
     height: auto;
     /* Maintains the image's aspect ratio */
@@ -217,8 +217,6 @@ h2 {
     transform: scale(1.1);
     /* Slightly enlarge the image */
 }
-
-
 
 /* Form Styling */
 .form-group {
@@ -261,39 +259,72 @@ select {
     background-color: #555;
 }
 
+/* Results Page */
 
-#results {
+.results-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.score-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 4rem;
+    min-width: 80rem;
+    color: var(--white);
+    align-items: center;
+}
+
+#score {
     background-color: #2b63ad;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid var(--light-beige);
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
     width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
-.retry-button {
-    background-color: #2b63ad;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 2.4rem;
-    width: 15%;
-    text-align: center;
-}
-
-.retry-button {
-    display: block;
+#retry-button {
+    display: flex;
+    justify-content: center;
+    /* Centers text horizontally inside the button */
+    align-items: center;
     margin: 20px auto;
-    text-decoration: none;
+    max-width: 35rem;
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    border-radius: 12px;
+    background: var(--highlight-yellow);
+    border: 2px solid var(--highlight-yellow);
+    color: var(--dark-blue);
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth hover effect */
 }
 
+.retry-button-link {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 0.5rem;
+    /* More spacing between letters */
+    font-family: var(--secondary-font);
+}
 
-/* Footer Styles */
-
+.retry-button:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge button on hover */
+}
 
 /* Quiz page */
 
@@ -430,7 +461,8 @@ answer-option {
 
 } */
 
-/* Homepage Media Query for Screens Below 780px */
+/*Homepage Media Queries*/
+/* Media Query for Screens Below 780px */
 @media (max-width: 780px) {
     #main-title {
         font-size: 6rem;
@@ -461,6 +493,7 @@ answer-option {
 
     #homepage-image {
         max-width: 90%;
+        max-height: 250px;
         /* Slightly larger image for smaller screens */
     }
 
@@ -470,7 +503,7 @@ answer-option {
     }
 }
 
-/* Media Queries */
+/* Media Queries for Quiz Page*/
 
 /* Mobile phones */
 @media (max-width: 576px) {
@@ -580,5 +613,47 @@ answer-option {
     #quiz-back,
     #quiz-forward {
         font-size: 3rem;
+    }
+}
+
+/*Results Page Media Queries*/
+/* Media Queries for Quiz Page*/
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .results-container {
+        padding: 3rem;
+    }
+
+    .score-container {
+        font-size: 3rem;
+        padding: 1rem;
+        min-width: 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .results-container {
+        padding: 3rem;
+    }
+
+    .score-container {
+        font-size: 4rem;
+        padding: 1.5rem;
+        min-width: 0;
+    }
+}
+
+/* Small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .results-container {
+        padding: 3rem;
+    }
+
+    .score-container {
+        font-size: 4rem;
+        padding: 2rem;
+        min-width: 0;
     }
 }
