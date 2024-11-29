@@ -10,7 +10,7 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-let questions = [
+let questionsHTML = [
     {
         question: 'Which of the following HTML elements is used to define the navigation links in a webpage?',
         choice1: '<nav></nav>',
@@ -28,21 +28,69 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'What is 8 + 2?',
-        choice1: '10',
-        choice2: '12',
-        choice3: '4',
-        choice4: '5',
+        question: 'Which attribute must be added to an HTML <iframe> tag to make it responsive (resize based on screen size)?',
+        choice1: 'src',
+        choice2: 'width and height',
+        choice3: 'frameborder',
+        choice4: 'allowfullscreen',
+        answer: 2,
+    },
+    {
+        question: 'What is the purpose of the alt attribute in an <img> tag?',
+        choice1: 'It provides a title for the image.',
+        choice2: 'It defines the image's width and height.',
+        choice3: 'It provides an alternative text description for the image if it cannot be displayed.',
+        choice4: 'It links to a different image if the current image is unavailable.',
+        answer: 3,
+    },
+    {
+        question: 'Which HTML element is used to define the header of a section or page?',
+        choice1: '<head>',
+        choice2: '<header>',
+        choice3: '<section>',
+        choice4: '<h1>',
+        answer: 2,
+    },
+    {
+        question: 'How can you make a list of links that are displayed horizontally (side by side) instead of vertically?',
+        choice1: 'By using the <ul> tag.',
+        choice2: 'By using the <ol> tag.',
+        choice3: 'By setting display: inline or display: inline-block on the list items (<li>).',
+        choice4: 'By using the <link> tag.',
+        answer: 3,
+    },
+    {
+        question: 'Which of the following tags is used to embed an external JavaScript file in an HTML document?',
+        choice1: '<js>',
+        choice2: '<script src="filename.js"></script>',
+        choice3: '<javascript src="filename.js"></javascript>',
+        choice4: '<link rel="script" href="filename.js">',
+        answer: 2,
+    },
+    {
+        question: 'In HTML5, which of the following elements is used to define a section of navigation links?',
+        choice1: '<navigation>',
+        choice2: '<nav>',
+        choice3: '<links>',
+        choice4: '<section>',
+        answer: 2,
+    },
+    {
+        question: 'What is the correct HTML5 element to use for defining a footer for a webpage?',
+        choice1: '<footer>',
+        choice2: '<bottom>',
+        choice3: '<end>',
+        choice4: '<section>',
         answer: 1,
     },
     {
-        question: 'What is 12 + 2',
-        choice1: '2',
-        choice2: '3',
-        choice3: '4',
-        choice4: '14',
-        answer: 4,
-    }
+        question: 'What is the default value of the display property for a <div> element in HTML?',
+        choice1: 'inline',
+        choice2: 'block',
+        choice3: 'inline-block',
+        choice4: 'none',
+        answer: 2,
+    },
 ]
 
 const SCORE_POINTS = 100
@@ -51,7 +99,7 @@ const MAX_QUESTIONS = 4
 startGame = () => {
     questionCounter = 0
     score = 0
-    availableQuestions = [...questions]
+    availableQuestions = [...questionsHTML]
     getNewQuestion()
 }
 
