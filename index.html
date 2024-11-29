@@ -16,33 +16,108 @@
 </head>
 
 <body>
+      
+
       <!-- Header Section -->
       <header>
         <nav>
             <ul>
                 <li><a href="index.html"><i id="house-icon" class="fa-solid fa-house-chimney-user"></i></a></li>
-                <li><a id="instructions" href="">Instructions</a></li>
+                <li>
+
+                    <button type="button"  id="instructions" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Instructions
+                    </button>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
             </ul>
         </nav>
     </header>
 
+
     <!-- Title section -->
     <section>
-        <h1>Code Quest</h1>
-        <img>
-    </section>
 
-   <section>
 
-    <div class="quiz-container">
+    <!--<div class="quiz-container">
         <div id="sign-in" class="justify-center flex-column">
-            <h2>Front-end Fundamentals</h2>
-                
+            <div>
+                <h1>Code Quest</h1>
+                <h2>Front-end Fundamentals</h2>
+            </div>
+            <div>
+                <h3>Choose your language</h3>
+                <div class="answer-container">
+                    <p class="answer-option">HTML</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">CSS</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">JavaScript</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">Enter your username</p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-option">Play</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> -->
+
 
    </section>
-      
+
+
+   <div>
+    <h1 id="main-title">Code Quest</h1>
+    <h2 id="main-subheading">Front-end Fundamentals</h2>
+</div>
+
+
+   <div class="container">
+    <div id="homepage-columns" class="row align-items-center">
+        <!-- Quiz Section -->
+        <div class="col-md-6">
+            <div class="homepage-container">
+                <div id="sign-in" class="justify-center flex-column">
+                    <div>
+                        <h3 id="language-choice">Play now</h3>
+                        <button class="home-item-button"><a href="..." class="button-link" aria-label="Start HTML quiz">HTML</a></button>
+                        <button class="home-item-button"><a href="..." class="button-link" aria-label="Start CSS quiz">CSS</a></button>
+                        <button class="home-item-button"><a href="..." class="button-link" aria-label="Start JavaScript quiz">JavaScript</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Picture Section -->
+        <div class="col-md-6 d-md-block">
+            <img src="assets/images/code-quest-mascot.webp" id="homepage-image" alt="Code Quest character" class="img-fluid">
+        </div>
+    </div>
+</div>
+
 
 
 
