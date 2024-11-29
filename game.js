@@ -10,10 +10,10 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-let questionsHTML = [
+let questions = [
     {
         question: 'Which of the following HTML elements is used to define the navigation links in a webpage?',
-        choice1: '<nav></nav>',
+        choice1: '<nav>',
         choice2: '<links>',
         choice3: '<header>',
         choice4: '<section>',
@@ -38,7 +38,7 @@ let questionsHTML = [
     {
         question: 'What is the purpose of the alt attribute in an <img> tag?',
         choice1: 'It provides a title for the image.',
-        choice2: 'It defines the image's width and height.',
+        choice2: 'It defines the dimension of the image.',
         choice3: 'It provides an alternative text description for the image if it cannot be displayed.',
         choice4: 'It links to a different image if the current image is unavailable.',
         answer: 3,
@@ -94,12 +94,12 @@ let questionsHTML = [
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0
     score = 0
-    availableQuestions = [...questionsHTML]
+    availableQuestions = [...questions]
     getNewQuestion()
 }
 
