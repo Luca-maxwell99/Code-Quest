@@ -106,7 +106,7 @@ h2 {
 }
 
 .homepage-container {
-    width: 100vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +152,15 @@ h2 {
     align-items: center;
     cursor: pointer;
 }
+
+#homepage-image {
+    max-width: 75%; /* Ensures the image doesn’t exceed the column width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes any inline spacing */
+    margin: 0 auto; /* Centers the image if needed */
+    object-fit: contain; /* Ensures the image fits within the defined dimensions without cropping */
+}
+
 
 
 /* Form Styling */
