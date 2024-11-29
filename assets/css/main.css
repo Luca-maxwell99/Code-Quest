@@ -168,6 +168,15 @@ h2 {
     object-fit: contain; /* Ensures the image fits within the defined dimensions without cropping */
 }
 
+#homepage-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+#homepage-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+
 
 
 
