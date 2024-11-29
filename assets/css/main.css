@@ -218,8 +218,6 @@ h2 {
     /* Slightly enlarge the image */
 }
 
-
-
 /* Form Styling */
 .form-group {
     margin-bottom: 20px;
@@ -264,16 +262,15 @@ select {
 /* Results Page */
 #results {
     background-color: #2b63ad;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid var(--light-beige);
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
     width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
-.retry-button {
+#retry-button {
     display: flex;
     justify-content: center;
     /* Centers text horizontally inside the button */
@@ -283,24 +280,30 @@ select {
     width: 100%;
     padding: 1.5rem 2.5rem;
     border-radius: 12px;
-    background: var(--medium-blue);
-    border: 2px solid var(--light-beige);
+    background: var(--highlight-yellow);
+    border: 2px solid var(--highlight-yellow);
+    color: var(--dark-blue);
     cursor: pointer;
     /* Pointer cursor on hover */
     transition: transform 0.3s ease, background-color 0.3s ease;
     /* Smooth hover effect */
 }
 
+.retry-button-link {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 0.5rem;
+    /* More spacing between letters */
+    font-family: var(--secondary-font);
+}
+
 .retry-button:hover {
     transform: scale(1.1);
     /* Slightly enlarge button on hover */
-    background: var(--medium-green);
-    /* Change background color on hover */
 }
-
-
-/* Footer Styles */
-
 
 /* Quiz page */
 
@@ -437,7 +440,8 @@ answer-option {
 
 } */
 
-/* Homepage Media Query for Screens Below 780px */
+/*Homepage Media Queries*/
+/* Media Query for Screens Below 780px */
 @media (max-width: 780px) {
     #main-title {
         font-size: 6rem;
@@ -477,7 +481,7 @@ answer-option {
     }
 }
 
-/* Media Queries */
+/* Media Queries for Quiz Page*/
 
 /* Mobile phones */
 @media (max-width: 576px) {
