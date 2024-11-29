@@ -127,23 +127,32 @@ h2 {
     padding-top: 5rem;
 }
 
-.home-item-container {
+.home-item-button {
     display: flex;
-    justify-content: center; /* Centers content horizontally inside the rectangle */
-    align-items: center; /* Centers content vertically inside the rectangle */
-    margin-bottom: 1.5rem;
-    max-width: 25rem;
-    width: 100%; /* Ensures consistency in size */
-    border-radius: 10px;
-    background: var(--medium-blue);
-    font-size: 4rem;
-    border: 2px solid var(--light-beige);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center; /* Centers text */
-    padding: 1rem; /* Adds padding for better visual spacing */
-    text-transform: uppercase;
-    letter-spacing: .4rem;
+    justify-content: center; /* Centers text horizontally inside the button */
+    align-items: center; /* Centers text vertically */
+    margin-bottom: 2.5rem; /* Increase the space between buttons */
+    max-width: 35rem; /* Increase max-width for larger buttons */
+    width: 100%; /* Button size adjusts to the parent container */
+    padding: 1.5rem 2.5rem; /* Increase padding for more space inside the button */
+    border-radius: 12px; /* Slightly larger border-radius for a more prominent button */
+    background: var(--medium-blue); /* Background color */
+    border: 2px solid var(--light-beige); /* Border color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.home-item-button:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+    background: var(--medium-green); /* Change background color on hover */
+}
+
+.button-link {
+    text-decoration: none;
+    color: var(--white); /* Text color */
+    font-size: 3rem; /* Larger font size for better readability */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 0.5rem; /* More spacing between letters */
 }
 
 .home-item-container:hover {
@@ -168,6 +177,13 @@ h2 {
     object-fit: contain; /* Ensures the image fits within the defined dimensions without cropping */
 }
 
+#homepage-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+#homepage-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
 
 
 
