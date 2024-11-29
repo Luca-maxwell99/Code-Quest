@@ -3,6 +3,7 @@
 
 ## Introduction 
 
+
 Code Quest is an engaging online quiz designed to test and enhance understanding of fundamental front-end web development concepts. The user can answer 10 multiple-choice questions about their chosen language and receive results on their performance. Code Quest is the result of a 3 day hackathon using HTML, CSS, and JavaScript by a team of developers:
 
 * Luca Maxwell (Project Lead)
