@@ -194,7 +194,7 @@ li {
     padding: 1rem 2rem;
 }
 
-#homepage-image {
+.homepage-image {
     max-width: 70%;
     /* Ensures the image doesn’t exceed the column width */
     height: auto;
@@ -207,14 +207,13 @@ li {
     /* Ensures the image fits within the defined dimensions without cropping */
 }
 
-#homepage-image {
+.homepage-image {
     transition: transform 0.3s ease-in-out;
 }
 
-#homepage-image:hover {
+/*.homepage-image:hover {
     transform: scale(1.1);
-    /* Slightly enlarge the image */
-}
+}*/
 
 /* Form Styling */
 .form-group {
@@ -257,6 +256,22 @@ select {
 }
 
 /* Results Page */
+
+#question {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: .1rem;
+}
+
+/* Ensure h3 is centered */
+.results-container .score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 
 .results-container {
     width: 100vw;
@@ -323,8 +338,16 @@ select {
 }
 
 #results-image {
-    max-width: 90%;
-    max-height: 350px;
+    max-width: 70%;
+    /* Ensures the image doesn’t exceed the column width */
+    max-height: 50vh;
+    /* Maintains the image's aspect ratio */
+    display: block;
+    /* Removes any inline spacing */
+    margin: 0 auto;
+    /* Centers the image */
+    object-fit: contain;
+    /* Ensures the image fits within the defined dimensions without cropping */
 }
 
 /* Quiz page */
@@ -499,7 +522,7 @@ h1 {
         /* Stack image below text containers */
     }
 
-    #homepage-image {
+    .homepage-image {
         max-width: 90%;
         max-height: 250px;
     }
@@ -644,30 +667,47 @@ h1 {
             padding: 1rem;
             min-width: 0;
         }
-    }
 
-    /* Tablets */
-    @media (min-width: 577px) and (max-width: 768px) {
-        .results-container {
-            padding: 3rem;
+        #retry-button {
+            max-width: 20rem;
+            padding: 1rem 1.5rem;
         }
 
-        .score-container {
-            font-size: 4rem;
-            padding: 1.5rem;
-            min-width: 0;
-        }
-    }
-
-    /* Small desktops */
-    @media (min-width: 769px) and (max-width: 1024px) {
-        .results-container {
-            padding: 3rem;
+        .retry-button-link {
+            font-size: 1.5rem;
         }
 
-        .score-container {
-            font-size: 4rem;
-            padding: 2rem;
-            min-width: 0;
+        .center-image {
+            justify-content: center;
         }
-    }
+
+        /* Tablets */
+        @media (min-width: 577px) and (max-width: 768px) {
+            .results-container {
+                padding: 3rem;
+            }
+
+            .score-container {
+                font-size: 4rem;
+                padding: 1.5rem;
+                min-width: 0;
+            }
+
+            #results-image-container { display: flex; justify-content: center; }
+        }
+
+        /* Small desktops */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .results-container {
+                padding: 3rem;
+                text-align: center;
+            }
+
+            .score-container {
+                font-size: 4rem;
+                padding: 2rem;
+                min-width: 0;
+            }
+
+            #results-image-container { display: flex; justify-content: center; }
+        }
