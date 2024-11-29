@@ -580,135 +580,141 @@ h1 {
     }
 }
 
+/* Tablets */
+@media (min-width: 577px) and (max-width: 880px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #question {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .quiz-container {
+        padding: 3rem;
+    }
+
+    .answer-container {
+        font-size: 4rem;
+        padding: 1.5rem;
+        min-width: 0;
+    }
+
+    .answer-letter {
+        padding: 1.5rem;
+    }
+
+    .back-button,
+    .next-button {
+        padding: 0.75rem 1.5rem;
+        max-width: 15rem;
+    }
+
+    #quiz-back,
+    #quiz-forward {
+        font-size: 3rem;
+    }
+}
+
+/* Small desktops */
+@media (min-width: 880px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #question {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .quiz-container {
+        padding: 3rem;
+    }
+
+    .answer-container {
+        font-size: 4rem;
+        padding: 2rem;
+        min-width: 0;
+    }
+
+    .answer-letter {
+        padding: 2rem;
+    }
+
+    .back-button,
+    .next-button {
+        padding: 1rem 2rem;
+        max-width: 15rem;
+    }
+
+    #quiz-back,
+    #quiz-forward {
+        font-size: 3rem;
+    }
+}
+
+/*Results Page Media Queries*/
+/* Media Queries for Quiz Page*/
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .results-container {
+        padding: 3rem;
+    }
+
+    .score-container {
+        font-size: 3rem;
+        padding: 1rem;
+        min-width: 0;
+    }
+
+    #retry-button {
+        max-width: 20rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .retry-button-link {
+        font-size: 1.5rem;
+    }
+
+    .center-image {
+        justify-content: center;
+    }
+
     /* Tablets */
-    @media (min-width: 577px) and (max-width: 880px) {
-        h1 {
-            font-size: 3rem;
-        }
-
-        #question {
-            font-size: 3rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .quiz-container {
-            padding: 3rem;
-        }
-
-        .answer-container {
-            font-size: 4rem;
-            padding: 1.5rem;
-            min-width: 0;
-        }
-
-        .answer-letter {
-            padding: 1.5rem;
-        }
-
-        .back-button,
-        .next-button {
-            padding: 0.75rem 1.5rem;
-            max-width: 15rem;
-        }
-
-        #quiz-back,
-        #quiz-forward {
-            font-size: 3rem;
-        }
-    }
-
-    /* Small desktops */
-    @media (min-width: 880px) and (max-width: 1024px) {
-        h1 {
-            font-size: 4rem;
-        }
-
-        #question {
-            font-size: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .quiz-container {
-            padding: 3rem;
-        }
-
-        .answer-container {
-            font-size: 4rem;
-            padding: 2rem;
-            min-width: 0;
-        }
-
-        .answer-letter {
-            padding: 2rem;
-        }
-
-        .back-button,
-        .next-button {
-            padding: 1rem 2rem;
-            max-width: 15rem;
-        }
-
-        #quiz-back,
-        #quiz-forward {
-            font-size: 3rem;
-        }
-    }
-
-    /*Results Page Media Queries*/
-    /* Media Queries for Quiz Page*/
-
-    /* Mobile phones */
-    @media (max-width: 576px) {
+    @media (min-width: 577px) and (max-width: 768px) {
         .results-container {
             padding: 3rem;
         }
 
         .score-container {
-            font-size: 3rem;
-            padding: 1rem;
+            font-size: 4rem;
+            padding: 1.5rem;
             min-width: 0;
         }
 
-        #retry-button {
-            max-width: 20rem;
-            padding: 1rem 1.5rem;
-        }
-
-        .retry-button-link {
-            font-size: 1.5rem;
-        }
-
-        .center-image {
+        #results-image-container {
+            display: flex;
             justify-content: center;
         }
+    }
 
-        /* Tablets */
-        @media (min-width: 577px) and (max-width: 768px) {
-            .results-container {
-                padding: 3rem;
-            }
-
-            .score-container {
-                font-size: 4rem;
-                padding: 1.5rem;
-                min-width: 0;
-            }
-
-            #results-image-container { display: flex; justify-content: center; }
+    /* Small desktops */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .results-container {
+            padding: 3rem;
+            text-align: center;
         }
 
-        /* Small desktops */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .results-container {
-                padding: 3rem;
-                text-align: center;
-            }
-
-            .score-container {
-                font-size: 4rem;
-                padding: 2rem;
-                min-width: 0;
-            }
-
-            #results-image-container { display: flex; justify-content: center; }
+        .score-container {
+            font-size: 4rem;
+            padding: 2rem;
+            min-width: 0;
         }
+
+        #results-image-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
