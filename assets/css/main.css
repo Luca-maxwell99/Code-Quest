@@ -56,6 +56,12 @@ li {
     padding: 2rem;
 }
 
+#modal-icon {
+    color: var(--light-beige);
+    font-size: 5rem;
+    padding: 2rem;
+}
+
 #instructions {
     background-color: #073b4c;
     color: var(--light-beige);
@@ -415,20 +421,28 @@ answer-option {
 }
 
 
-/* make a media query for tablets */
+.modal-content {
+    background-color: #2b63ad;
+    color: var(--light-beige);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid var(--light-beige);
+}
 
-/* @media screen and (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 2rem;
-    }
+#exampleModalLabel {
+    font-size: 3.4rem;
+    margin-top: 30px;
+ 
+}
 
-    li {
-        font-size: 1.5rem;
-            padding: 20px;
-            text-decoration: underline;
-        }
+.modal-body {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
 
-} */
+
 
 /* Homepage Media Query for Screens Below 780px */
 @media (max-width: 780px) {
