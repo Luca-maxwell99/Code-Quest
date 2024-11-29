@@ -123,6 +123,10 @@ h2 {
     text-align: center; /* Ensures text is centered */
 }
 
+#homepage-columns {
+    padding-top: 5rem;
+}
+
 .home-item-container {
     display: flex;
     justify-content: center; /* Centers content horizontally inside the rectangle */
@@ -153,6 +157,7 @@ h2 {
     align-items: center; /* Centers text vertically */
     width: 100%;
     text-align: center;
+    padding: 1rem 2rem;
 }
 
 #homepage-image {
@@ -378,3 +383,32 @@ answer-option {
         }
 
 } */
+
+/* Media Query for Screens Below 780px */
+@media (max-width: 780px) {
+    #main-title {
+        font-size: 6rem; /* Reduce font size proportionally */
+        letter-spacing: 0.8rem; /* Adjust letter spacing */
+        text-align: center; /* Force text to center-align */
+        margin: 0 auto; /* Ensure it's centered */
+    }
+
+    #main-subheading {
+        font-size: 2.5rem; /* Reduce font size */
+        letter-spacing: 0.3rem; /* Adjust letter spacing */
+        text-align: center; /* Force text to center-align */
+        margin: 0 auto; /* Ensure it's centered */
+    }
+
+    #homepage-columns {
+        flex-direction: column-reverse; /* Stack image below text containers */
+    }
+
+    #homepage-image {
+        max-width: 90%; /* Slightly larger image for smaller screens */
+    }
+
+    .home-item-container {
+        font-size: 3rem; /* Adjust rectangle text size */
+    }
+}
