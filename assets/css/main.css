@@ -57,6 +57,7 @@ li {
 }
 
 #instructions {
+    background-color: #073b4c;
     color: var(--light-beige);
     text-decoration: none;
     font-family: var(--secondary-font);
