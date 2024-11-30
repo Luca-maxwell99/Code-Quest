@@ -446,10 +446,10 @@ h1 {
 .next-button:hover {
     padding: 1rem 2rem;
     border-radius: 10px;
-    cursor: pointer;
     max-width: 15rem;
     background-color: var(--dark-blue);
     border: 2px solid var(--highlight-yellow);
+    color: var(--highlight-yellow);
 }
 
 #quiz-back {
@@ -467,6 +467,7 @@ h1 {
 #quiz-forward:hover,
 #quiz-back:hover {
     color: var(--highlight-yellow);
+    cursor: pointer;
 }
 
 
