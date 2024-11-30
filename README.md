@@ -1,5 +1,5 @@
 # Code Quest
-![Code Quest header](assets/images/code-quest-header.webp)
+![Code Quest header](assets/images/code-quest-header-image.webp)
 
 ## Introduction 
 
@@ -9,7 +9,7 @@ Code Quest is an engaging online quiz designed to test and enhance understanding
 * Navya Keelara Nagaraju
 * Kate Elliott
 
-<a href="https://..." target="_blank">View the live project here.</a>
+<a href="https://luca-maxwell99.github.io/Code-Quest/" target="_blank">View the live project here.</a>
 
 ## Agile
 
@@ -61,13 +61,13 @@ The colour palette for Code Quest was chosen to create a visually appealing and 
 
 All imagery for Code Quest came from Canva. The main graphic is of the Code Quest character for visual interest, and the other icons were kept simple to not complicate the site and have the quiz be the focus.
 
-![Images used](assets/...)
+![Images used](assets/images/code-quest-imagery.webp)
 
 ### Responsiveness
 
 ...
 
-![Website on multiple device sizes](assets/...)
+![Website on multiple device sizes](assets/images/code-quest-responsive.webp)
 
 ## Features
 ### Existing Features
@@ -143,7 +143,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * On the right-hand side in the Deployments section click on 'github-pages'.
 * The latest deployed link will appear at the top of the page.
 
-<a href="..." target="_blank">View the live project here.</a>
+<a href="https://luca-maxwell99.github.io/Code-Quest/" target="_blank">View the live project here.</a>
 
 ## Credits
 ### Code
@@ -154,3 +154,5 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 ### Media
 * All imagery was from Canva.
+
+![Code Quest end card](assets/images/code-quest-endcard.webp)
