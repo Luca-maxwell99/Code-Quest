@@ -28,10 +28,10 @@ The user stories for this project as well as their acceptance criteria and tasks
 * As a beginner student, I want to select a quiz topic (HTML, CSS, or JavaScript) so that I can test my knowledge in a specific area.
 * As a beginner student, I want to have a responsive design so that I can take the quiz on different devices like desktop, tablet, and mobile.
 * As a beginner student, I want to answer 10 questions in the quiz so that I can evaluate my understanding of the topic.
-* As a beginner student, I want to see my score at the end of the quiz so that I can know how well I did.
 * As a beginner student, I want to have the option to try the quiz again so that I can improve my score and knowledge.
-* As a beginner student, I want to switch between light and dark mode so that I can choose the theme that is comfortable for my eyes.
 * As a beginner student, I want to see an instruction modal so that I can understand how to take the quiz.
+* As a beginner student, I want to see my score at the end of the quiz so that I can know how well I did.
+* As a beginner student, I want to switch between light and dark mode so that I can choose the theme that is comfortable for my eyes.
 * As a beginner student, I want to add my username so that I can personalize my quiz experience.
 * As a student, I want to select the level of difficulty so that I can choose quiz questions that match my skill level.
 
@@ -65,30 +65,30 @@ All imagery for Code Quest came from Canva. The main graphic is of the Code Ques
 
 ### Responsiveness
 
-...
+Code Quest is a site that is responsive across all device sizes. The layout is adjusted to suit each screen sizes so that users on any device can enjoy the site.
 
 ![Website on multiple device sizes](assets/images/code-quest-responsive.webp)
 
 ## Features
 ### Existing Features
 
-#### Light and dark mode
+#### Instruction modal
 
-...
+There is an instruction modal fixed to the top of every page on the website so that the user can always check the instructions without interrupting their quiz. The modal was built using Bootstrap then customised to match Code Quest branding.
 
 #### Navigation
 
-...
+The user can navigate back to the homepage of the site at any point using the home icon on the top left. This simple navigation ensures the user experience of the quiz is not overcomplicated. 
 
-#### Game Start
+#### Game Choice
 
-...
+The homepage of the site allows the user to pick the language they would like to be quizzed on so that they can customise their learning to suit their needs. Each button then takes the user to the relevant quiz.
 
 #### Game Active
 
-...
+The active quiz page features a question with four multiple choice options for answers. If the user selects the correct answer it will turn green to signify it being correct. If the user selects the wrong answer it will turn red to signify it being incorrect, then the correct answer will turn green so that they can learn the correct answer. There are backwards and forwards buttons to move throughout the questions.
 
-#### Game End
+#### Game Results
 
 ...
 
