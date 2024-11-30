@@ -53,7 +53,7 @@ This project used 'Mulish' as the heading font and 'Space Mono' as the body font
 
 #### Colour Palette
 
-The colour palette for Code Quest was chosen to create a visually appealing and user-friendly experience. The site offers both a light and dark mode within the colour palette to ensure the interface is easy on the eyes and accessible to a wide range of users. The charater's colours add a touch of personality to the design, while the core palette provides a clear and readable interface.
+The colour palette for Code Quest was chosen to create a visually appealing and user-friendly experience. The site offers is built in a dark mode colour palette to ensure the interface is easy on the eyes. The charater's colours add a touch of personality to the design, while the core palette provides a clear and readable interface.
 
 ![Colour palette](assets/images/code-quest-palette.webp)
 
