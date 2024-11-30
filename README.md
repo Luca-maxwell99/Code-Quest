@@ -101,9 +101,18 @@ For our project, we decided to deliver a simple yet effective MVP, given our tim
 * Leaderboard - To log your score and compare scores to peers using the quiz aswell. 
 * Timed trials - Adding a timing feature would add another aspect to the quiz.
 
-## Technologies
+## Built With
 
-...
+* HTML
+* CSS
+* JavaScript
+* GitHub
+* Gitpod
+* Bootstrap v5.3.3
+* Canva
+* FontAwesome
+* Google Fonts
+* AI
 
 ### AI
 ...
@@ -149,10 +158,14 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 ## Credits
 ### Code
+* The initial GitHub project was built using the Code Institute template to start.
+* The modal was built with Bootstrap features.
+* The layout of the quiz page was from a <a href="https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=PL7oCkMy5aVzUQOwGt9a60pAuOkSlNPaeU&ab_channel=BrianDesign" target="_blank"> Brian Design tutorial</a> on YouTube.
 * ...
 
 ### Content
-* ...
+* The question content was generated using AI.
+* The icons were from Font Awesome.
 
 ### Media
 * All imagery was from Canva.
