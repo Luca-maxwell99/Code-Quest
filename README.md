@@ -13,7 +13,7 @@ Code Quest is an engaging online quiz designed to test and enhance understanding
 
 ## Agile
 
-...
+Given the timeframe of this hackathon we prioritised delivering a minimum viable product by the deadline, with ideas on what could be added if time allowed. This process was managed with a kanban board that assigned tasks with either must have, should have, or could have labels. As a team of three we had scheduled meetings at the start, middle and end of day to keep us aligned and on track. This approach meant that each developer contributed fairly and felt satisfied with the end product.
 
 ## UX Design
 
@@ -102,6 +102,8 @@ For our project, we decided to deliver a simple yet effective MVP, given our tim
 * Timed trials - Adding a timing feature would add another aspect to the quiz.
 
 ## Technologies
+
+...
 
 ### AI
 ...
