@@ -139,13 +139,14 @@ This project combined human experience with AI in several aspects of its develop
 To ensure the success of the site there was testing and debugging carried out throughout the process both manually and with external tools. This process means that the site is now successfully deployed and has passed testing.
 
 ### Validator Testing
-...
 
-![HTML testing](assets/...)
+No errors in HTML validation. This is the case across all site pages.
 
-...
+![HTML testing](assets/images/index.html-validation.png)
 
-![CSS testing](assets/images/code-quest-css-validation.jpg)
+No errors in CSS validation
+
+![CSS testing](assets/images/CSS-validation.png)
 
 ### JavaScript Testing
 ...
