@@ -65,25 +65,26 @@
     </header>
 
 
-   <!-- Results section -->
+    <!-- Results section -->
 
-<div class="results-container">
-    <div class="justify-center flex-column score-container">
-        <h3 id="question-center">Well done for completing Code Quest!</h3>
-        <p id="main-subheading">Your score: <span id="score">0</span></p>
-        <form id="username-form">
-            <label for="username">Enter your username:</label>
-            <input type="text" id="username" name="username" required>
-            <button type="submit">Submit</button>
-        </form>
-        <p id="user-score-display" style="display: none;">Username: <span id="display-username"></span>, Score: <span id="display-score"></span></p>
+    <div class="results-container">
+        <div class="justify-center flex-column score-container">
+            <h3 id="question-center">Well done for completing Code Quest!</h3>
+            <p id="main-subheading">Your score:</p>
+        </div>
     </div>
-</div>
-<div>
-    <button id="retry-button" class="home-item-button" aria-label="Return to homepage" onclick="location.href='index.html';">Try Again</button>
-</div>
+    <div>
+        <button id="retry-button" class="home-item-button" aria-label="Return to homepage"
+            onclick="location.href='index.html';">Try Again</button>
+    </div>
 
-    
+    <!-- Picture Section -->
+    <div id="results-image-container" class="col-md-6 d-md-block">
+        <img src="assets/images/results-page-mascot.webp" alt="Code Quest character" id="results-image"
+            class="img-fluid">
+    </div>
+
+
     <!-- Picture Section -->
     <div id="results-image-container" class="col-md-6 d-md-block">
         <img src="assets/images/results-page-mascot.webp" alt="Code Quest character" id="results-image"
@@ -102,12 +103,12 @@
 
     <script src="game.js"></script>
 
-      <!-- Font awesome -->
-      <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
-      <!-- Boostrap -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
