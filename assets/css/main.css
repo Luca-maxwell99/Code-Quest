@@ -321,16 +321,9 @@ select {
     transition: transform 0.3s ease, background-color 0.3s ease;
     /* Smooth hover effect */
     font-size: 3rem;
-}
-
-.retry-button-link {
-    text-decoration: none;
-    color: var(--dark-blue);
-    font-size: 2rem;
-    text-transform: uppercase;
     letter-spacing: 0.5rem;
-    /* More spacing between letters */
-    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .retry-button:hover {
