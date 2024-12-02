@@ -141,18 +141,19 @@ To ensure the success of the site there was testing and debugging carried out th
 
 ### Validator Testing
 
-No errors in HTML validation. This is the case across all site pages.
+Site passes HTML validation. This is the case across all site pages.
 
 ![HTML testing](assets/images/index.html-validation.png)
 
-No errors in CSS validation
+Site passes CSS validation.
 
 ![CSS testing](assets/images/CSS-validation.png)
 
 ### JavaScript Testing
-...
 
-![JS testing](assets/...)
+Site passes JavaScript validation.
+
+![JS testing](assets/images/javascript-validation.png)
 
 ### Lighthouse
 
