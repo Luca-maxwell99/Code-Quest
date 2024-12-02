@@ -83,7 +83,7 @@ The user can navigate back to the homepage of the site at any point using the ho
 
 There is an instruction modal fixed to the top of every page on the website so that the user can always check the instructions without interrupting their quiz. The modal was built using Bootstrap then customised to match Code Quest branding.
 
-![Code Quest instruction modal](assets/images/nav-bar-feature.png)
+![Code Quest instruction modal](assets/images/instructions-modal-feature.png)
 
 #### Game Choice
 
