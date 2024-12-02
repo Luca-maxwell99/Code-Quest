@@ -36,14 +36,26 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
+h1,
+h3,
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffcf6;
+    font-size: 3rem;
+
+}
+
+/* Main Content Styles */
+/* Navbar*/
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     font-size: 3rem;
     color: var(--light-beige);
-
-
 }
 
 li {
@@ -51,6 +63,12 @@ li {
 }
 
 #house-icon {
+    color: var(--highlight-yellow);
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+
+#modal-icon {
     color: var(--light-beige);
     font-size: 5rem;
     padding: 2rem;
@@ -64,31 +82,11 @@ li {
     text-transform: uppercase;
     letter-spacing: .4rem;
     margin: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 3px solid var(--highlight-yellow);
     border-radius: 10px;
+    font-size: 2rem;
 }
-
-/* nav a {
-    color:var(--light-beige);
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    text-transform: uppercase;
-    letter-spacing: .4rem; 
-}*/
-
-h1,
-h3,
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fffcf6;
-    font-size: 3rem;
-
-}
-
-/* Main Content Styles */
 
 /* Homepage */
 
@@ -196,8 +194,8 @@ h2 {
     padding: 1rem 2rem;
 }
 
-#homepage-image {
-    max-width: 75%;
+.homepage-image {
+    max-width: 70%;
     /* Ensures the image doesn’t exceed the column width */
     height: auto;
     /* Maintains the image's aspect ratio */
@@ -209,16 +207,13 @@ h2 {
     /* Ensures the image fits within the defined dimensions without cropping */
 }
 
-#homepage-image {
+.homepage-image {
     transition: transform 0.3s ease-in-out;
 }
 
-#homepage-image:hover {
+/*.homepage-image:hover {
     transform: scale(1.1);
-    /* Slightly enlarge the image */
-}
-
-
+}*/
 
 /* Form Styling */
 .form-group {
@@ -254,46 +249,106 @@ select {
     cursor: pointer;
     font-size: 2.1rem;
     width: 50%;
-    /* Make button full width on small screens */
 }
 
 #play-button:hover {
     background-color: #555;
 }
 
+/* Results Page */
 
-#results {
+#question {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: .1rem;
+}
+
+/* Ensure h3 is centered */
+.results-container .score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.results-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.score-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 4rem;
+    min-width: 80rem;
+    color: var(--white);
+    align-items: center;
+}
+
+#score {
     background-color: #2b63ad;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid var(--light-beige);
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
     width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
-.retry-button {
-    background-color: #2b63ad;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 2.4rem;
-    width: 15%;
-    text-align: center;
-}
-
-.retry-button {
-    display: block;
+#retry-button {
+    display: flex;
+    justify-content: center;
+    /* Centers text horizontally inside the button */
+    align-items: center;
     margin: 20px auto;
-    text-decoration: none;
+    max-width: 35rem;
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    border-radius: 12px;
+    background: var(--highlight-yellow);
+    border: 2px solid var(--highlight-yellow);
+    color: var(--dark-blue);
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth hover effect */
 }
 
+.retry-button-link {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    /* More spacing between letters */
+    font-family: var(--secondary-font);
+}
 
-/* Footer Styles */
+.retry-button:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge button on hover */
+}
 
+#results-image {
+    max-width: 70%;
+    /* Ensures the image doesn’t exceed the column width */
+    max-height: 50vh;
+    /* Maintains the image's aspect ratio */
+    display: block;
+    /* Removes any inline spacing */
+    margin: 0 auto;
+    /* Centers the image */
+    object-fit: contain;
+    /* Ensures the image fits within the defined dimensions without cropping */
+}
 
 /* Quiz page */
 
@@ -364,10 +419,10 @@ h1 {
     color: #fff;
 }
 
-answer-option {
+/* answer-option {
     width: 100%;
     display: flex;
-}
+} */
 
 .button-container {
     display: flex;
@@ -391,10 +446,10 @@ answer-option {
 .next-button:hover {
     padding: 1rem 2rem;
     border-radius: 10px;
-    cursor: pointer;
     max-width: 15rem;
     background-color: var(--dark-blue);
     border: 2px solid var(--highlight-yellow);
+    color: var(--highlight-yellow);
 }
 
 #quiz-back {
@@ -412,25 +467,34 @@ answer-option {
 #quiz-forward:hover,
 #quiz-back:hover {
     color: var(--highlight-yellow);
+    cursor: pointer;
 }
 
 
-/* make a media query for tablets */
+.modal-content {
+    background-color: #2b63ad;
+    color: var(--light-beige);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid var(--light-beige);
+}
 
-/* @media screen and (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 2rem;
-    }
+#exampleModalLabel {
+    font-size: 3.4rem;
+    margin-top: 30px;
+    letter-spacing: .2rem;
+}
 
-    li {
-        font-size: 1.5rem;
-            padding: 20px;
-            text-decoration: underline;
-        }
+.modal-body {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
 
-} */
+/*Homepage Media Queries*/
 
-/* Homepage Media Query for Screens Below 780px */
+/* Media Query for Screens Below 780px */
 @media (max-width: 780px) {
     #main-title {
         font-size: 6rem;
@@ -459,18 +523,17 @@ answer-option {
         /* Stack image below text containers */
     }
 
-    #homepage-image {
+    .homepage-image {
         max-width: 90%;
-        /* Slightly larger image for smaller screens */
+        max-height: 250px;
     }
 
     .home-item-container {
         font-size: 3rem;
-        /* Adjust rectangle text size */
     }
 }
 
-/* Media Queries */
+/* Media Queries for Quiz Page*/
 
 /* Mobile phones */
 @media (max-width: 576px) {
@@ -507,10 +570,19 @@ answer-option {
     #quiz-forward {
         font-size: 3rem;
     }
+
+    #house-icon {
+        font-size: 4rem;
+    }
+
+    #instructions {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
 }
 
 /* Tablets */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 880px) {
     h1 {
         font-size: 3rem;
     }
@@ -547,7 +619,7 @@ answer-option {
 }
 
 /* Small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 880px) and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
     }
@@ -582,3 +654,68 @@ answer-option {
         font-size: 3rem;
     }
 }
+
+/*Results Page Media Queries*/
+/* Media Queries for Quiz Page*/
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .results-container {
+        padding: 3rem;
+    }
+
+    .score-container {
+        font-size: 3rem;
+        padding: 1rem;
+        min-width: 0;
+    }
+
+    #retry-button {
+        max-width: 20rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .retry-button-link {
+        font-size: 1.5rem;
+    }
+
+    .center-image {
+        justify-content: center;
+    }
+
+    /* Tablets */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .results-container {
+            padding: 3rem;
+        }
+
+        .score-container {
+            font-size: 4rem;
+            padding: 1.5rem;
+            min-width: 0;
+        }
+
+        #results-image-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    /* Small desktops */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .results-container {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .score-container {
+            font-size: 4rem;
+            padding: 2rem;
+            min-width: 0;
+        }
+
+        #results-image-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
