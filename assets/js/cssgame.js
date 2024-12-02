@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const questions = [
         {
             question: "Which CSS property is used to change the text color of an element?",
-            options: ["<color>", "<font-color>", "<text-color>", "<background-color>"],
+            options: ["color", "font-color", "text-color", "background-color"],
             correctAnswer: 0,
         },
         {
             question: "Which CSS property is used to change the font size of an element?",
-            options: ["<text-size>", "<font-size>", "<size>", "<text-style>"],
+            options: ["text-size", "font-size", "size", "text-style"],
             correctAnswer: 0,
         },
         {
