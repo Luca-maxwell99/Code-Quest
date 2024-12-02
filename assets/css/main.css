@@ -320,6 +320,7 @@ select {
     /* Pointer cursor on hover */
     transition: transform 0.3s ease, background-color 0.3s ease;
     /* Smooth hover effect */
+    font-size: 3rem;
 }
 
 .retry-button-link {
