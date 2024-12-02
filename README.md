@@ -18,7 +18,7 @@ Given the timeframe of this hackathon we prioritised delivering a minimum viable
 
 ## UX Design
 
-#### Site Owner’s Goal
+### Site Owner’s Goal
 
 To create an engaging online quiz that helps beginner coders solidify their understanding of front-end web development languages through interactive quizzes. By providing immediate feedback and a fun learning experience, Code Quest aims to empower learners to build a strong foundation in HTML, CSS, and JavaScript.
 
@@ -73,25 +73,35 @@ Code Quest is a site that is responsive across all device sizes. The layout is a
 ## Features
 ### Existing Features
 
+#### Navigation
+
+The user can navigate back to the homepage of the site at any point using the home icon on the top left. This simple navigation ensures the user experience of the quiz is not overcomplicated. 
+
+![Code Quest navigation bar](assets/images/nav-bar-feature.png)
+
 #### Instruction modal
 
 There is an instruction modal fixed to the top of every page on the website so that the user can always check the instructions without interrupting their quiz. The modal was built using Bootstrap then customised to match Code Quest branding.
 
-#### Navigation
-
-The user can navigate back to the homepage of the site at any point using the home icon on the top left. This simple navigation ensures the user experience of the quiz is not overcomplicated. 
+![Code Quest instruction modal](assets/images/nav-bar-feature.png)
 
 #### Game Choice
 
 The homepage of the site allows the user to pick the language they would like to be quizzed on so that they can customise their learning to suit their needs. Each button then takes the user to the relevant quiz.
 
+![Code Quest game choice](assets/images/choose-game-feature.png)
+
 #### Game Active
 
 The active quiz page features a question with four multiple choice options for answers. If the user selects the correct answer it will turn green to signify it being correct. If the user selects the wrong answer it will turn red to signify it being incorrect, then the correct answer will turn green so that they can learn the correct answer. There are backwards and forwards buttons to move throughout the questions. During the quiz the user can also see the progress bar change as they move forward.
 
+![Code Quest navigation bar](assets/images/active-game-feature.png)
+
 #### Game Results
 
 After answering the last question the user is taken to the final page. The page congratulates the user and has a try again button to take them back to the homepage.
+
+![Code Quest navigation bar](assets/images/try-again-feature.png)
 
 ### Future Changes
 
