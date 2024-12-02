@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             question: "Which CSS property is used to change the font size of an element?",
             options: ["text-size", "font-size", "size", "text-style"],
-            correctAnswer: 0,
+            correctAnswer: 1,
         },
         {
             question: "Which of the following CSS selectors is used to select all elements of a particular class?",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             question: "Which property is used to change the background color of an element?",
-            options: ["<bg-color>", "<background-color>", "<color>", "<background>"],
+            options: ["bg-color", "background-color", "color", "background"],
             correctAnswer: 1,
         },
         {
@@ -59,21 +59,21 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             question: "How do you make a webpage responsive using CSS?",
             options: [
-                "<By using @media queries>",
-                "<By using fixed pixel values>",
-                "<By using position: relative>",
-                "<By setting a specific width for each element>",
+                "By using @media queries",
+                "By using fixed pixel values",
+                "By using position: relative",
+                "By setting a specific width for each element",
             ],
             correctAnswer: 0,
         },
         {
             question: "Which property is used to create space between an element's content and its border?",
-            options: ["<margin>", "<padding>", "<border-spacing>", "<space>"],
+            options: ["margin", "padding", "border-spacing", "space"],
             correctAnswer: 1,
         },
         {
             question: "Which of the following properties can be used to change the alignment of text in CSS?",
-            options: ["<text-align>", "<align-text>", "<text-align-center>", "<vertical-align>"],
+            options: ["text-align", "align-text", "text-align-center", "vertical-align"],
             correctAnswer: 0,
         },        
     ];
