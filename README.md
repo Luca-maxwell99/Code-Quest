@@ -156,7 +156,7 @@ No errors in CSS validation
 
 ### Lighthouse
 
-All categories 90-100 with Lighthouse testing across pages on both desktop and mobile.
+All categories 85-100 with Lighthouse testing across pages on both desktop and mobile.
 
 ![Lighthouse testing desktop](assets/images/homepage-lighthouse-desktop.png)
 
