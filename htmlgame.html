@@ -8,20 +8,19 @@
     <meta name="description" content="Code Quest is an engaging online quiz designed to test and enhance understanding of fundamental front-end web development concepts.">
     <meta name="keywords" content="code quest, coding test, programming challenge, developer quiz, coding beginner">
     <title>Code Quest</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/code-quest-favicon-transparent.webp">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/code-quest-favicon-transparent.webp">
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- Header Section -->
     <header>
-
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html"><i id="house-icon" class="fa-solid fa-house-chimney-user" aria-label="Home"></i></a></li>
@@ -34,12 +33,11 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 id="exampleModalLabel" aria-label="Quiz Instructions">Quiz Instructions</h1> 
+                                    <h1 id="exampleModalLabel" aria-label="Quiz Instructions">Quiz Instructions</h1>
                                     <span><i id="modal-icon" class="fa-solid fa-person-chalkboard" aria-label="Instructions Icon"></i></span>
                                 </div>
                                 <div>
-                                    <p class="modal-body">
-                                        Welcome to our Quiz! The instructions are pretty straightforward! Firstly, select your quiz type below. Complete the 10 questions that follow, remember, no cheating!
+                                    <p class="modal-body">Welcome to our Quiz! The instructions are pretty straightforward! Firstly, select your quiz type below. Complete the 10 questions that follow, remember, no cheating!
                                         <br>
                                         <br>
                                         Finally, you can view your results and your username. Good luck!
@@ -54,36 +52,43 @@
                 </li>
             </ul>
         </nav>
-
-        <!-- Title section -->
-        <div>
-            <h1 id="main-title">Code Quest</h1>
-            <h2 id="main-subheading">Front-end Fundamentals</h2>
-        </div>
     </header>
 
+    <!-- Title section -->
+    <!--<section>
+        <h1>Code Quest</h1>
+        <img>
+    </section>-->
     <main>
-        <!--Main content section-->
-        <section aria-labelledby="main-title">
-            <div class="container">
-                <div id="homepage-columns" class="row align-items-center">
-                    <!-- Choose Quiz Section -->
-                    <div class="col-md-6">
-                        <div class="homepage-container">
-                            <div id="sign-in" class="justify-center flex-column">
-                                <div>
-                                    <h3 id="language-choice">Play now</h3>
-                                    <a href="htmlgame.html" class="home-item-button button-link" aria-label="Start HTML quiz">HTML</a>
-                                    <a href="cssgame.html" class="home-item-button button-link" aria-label="Start CSS quiz">CSS</a>
-                                    <a href="jsgame.html" class="home-item-button button-link" aria-label="Start JavaScript quiz">JavaScript</a>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Main quiz section-->
+        <section aria-labelledby="exampleModalLabel">
+            <div class="quiz-container">
+                <div id="game" class="justify-center flex-column">
+                    <h3 id="question">Which of the following HTML elements is used to define the navigation links in a webpage?</h3>
+                    <div class="answer-container" role="group" aria-labelledby="question">
+                        <p class="answer-letter">A</p>
+                        <p class="answer-option" data-number="1">&lt;nav&gt;</p>
                     </div>
-
-                    <!-- Picture Section -->
-                    <div class="col-md-6 d-md-block">
-                        <img src="assets/images/code-quest-mascot.webp" class="homepage-image img-fluid" alt="Code Quest character" id="homepage-image">
+                    <div class="answer-container" role="group" aria-labelledby="question">
+                        <p class="answer-letter">B</p>
+                        <p class="answer-option" data-number="2">&lt;links&gt;</p>
+                    </div>
+                    <div class="answer-container" role="group" aria-labelledby="question">
+                        <p class="answer-letter">C</p>
+                        <p class="answer-option" data-number="3">&lt;header&gt;</p>
+                    </div>
+                    <div class="answer-container" role="group" aria-labelledby="question">
+                        <p class="answer-letter">D</p>
+                        <p class="answer-option" data-number="4">&lt;section&gt;</p>
+                    </div>
+                    <!-- Progress -->
+                    <div class="progress-container" aria-label="Progress">
+                        <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <!-- Buttons Container -->
+                    <div class="button-container" aria-label="Navigation buttons">
+                        <button class="back-button" aria-label="Go back"><i id="quiz-back" class="fa-solid fa-backward"></i></button>
+                        <button class="next-button" aria-label="Next question"><i id="quiz-forward" class="fa-solid fa-forward"></i></button>
                     </div>
                 </div>
             </div>
@@ -96,15 +101,11 @@
     </footer>
 
     <!-- Link to external JavaScript -->
-    <script src="htmlgame.js"></script>
-    <script src="cssgame.js"></script>
-    <script src="jsgame.js"></script>
+    <script src="assets/js/htmlgame.js"></script>
 
-    <!-- Font awesome -->
+    <!-- Font awesome and Bootstrap -->
     <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
