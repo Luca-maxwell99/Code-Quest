@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+/* jshint esversion: 6 */
+document.addEventListener("DOMContentLoaded", () => { "use strict"; // Strict mode within the function
     const progressBar = document.getElementById("progress-bar");
     const questionElement = document.getElementById("question");
     const answerContainers = document.querySelectorAll(".answer-container");
