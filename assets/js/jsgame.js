@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             question: "What is the output of the following code? console.log(2 + '2');",
-            options: ["<22>", "<4>", "<NaN>", "<undefined>"],
+            options: ["22", "4", "NaN", "undefined"],
             correctAnswer: 0,
         },
         {
