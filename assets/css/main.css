@@ -272,6 +272,13 @@ select {
     text-align: center;
 }
 
+#results-subheading {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    letter-spacing: .4rem;
+    padding-top: 3rem;
+}
+
 
 .results-container {
     width: 100vw;
@@ -693,6 +700,17 @@ h1 {
     .center-image {
         justify-content: center;
     }
+
+    #results-subheading {
+        font-size: 2.5rem;
+        /* Reduce font size */
+        letter-spacing: 0.3rem;
+        /* Adjust letter spacing */
+        text-align: center;
+        /* Force text to center-align */
+        margin: 0 auto;
+        /* Ensure it's centered */
+    }
 }
 
     /* Tablets */
@@ -710,6 +728,17 @@ h1 {
         #results-image-container {
             display: flex;
             justify-content: center;
+        }
+
+        #results-subheading {
+            font-size: 2.5rem;
+            /* Reduce font size */
+            letter-spacing: 0.3rem;
+            /* Adjust letter spacing */
+            text-align: center;
+            /* Force text to center-align */
+            margin: 0 auto;
+            /* Ensure it's centered */
         }
     }
 
