@@ -687,10 +687,7 @@ h1 {
     #retry-button {
         max-width: 20rem;
         padding: 1rem 1.5rem;
-    }
-
-    .retry-button-link {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .center-image {
