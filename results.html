@@ -65,17 +65,24 @@
     </header>
 
 
-    <!-- Results section -->
+   <!-- Results section -->
 
-    <div class="results-container">
-        <div class="justify-center flex-column score-container">
-            <h3 id="question-center">Well done for completing Code Quest!</h3>
-            <p id="main-subheading">Your score:</p>
-        </div>
+<div class="results-container">
+    <div class="justify-center flex-column score-container">
+        <h3 id="question-center">Well done for completing Code Quest!</h3>
+        <p id="main-subheading">Your score: <span id="score">0</span></p>
+        <form id="username-form">
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="user-score-display" style="display: none;">Username: <span id="display-username"></span>, Score: <span id="display-score"></span></p>
     </div>
-    <div>
-        <button id="retry-button" class="home-item-button" aria-label="Return to homepage" onclick="location.href='index.html';">Try Again</button>
-    </div>
+</div>
+<div>
+    <button id="retry-button" class="home-item-button" aria-label="Return to homepage" onclick="location.href='index.html';">Try Again</button>
+</div>
+
     
     <!-- Picture Section -->
     <div id="results-image-container" class="col-md-6 d-md-block">
