@@ -402,12 +402,13 @@ h1 {
     cursor: pointer;
 }
 
-#correct-answer {
+.correct {
     background: var(--green-background);
+    color: white; /* Optional: ensure text remains legible */
 }
-
-#incorrect-answer {
+.incorrect {
     background: var(--red-background);
+    color: white; /* Optional: ensure text remains legible */
 }
 
 .answer-container:hover {

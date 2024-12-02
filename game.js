@@ -1,160 +1,149 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.answer-option'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+document.addEventListener("DOMContentLoaded", () => {
+    const questions = [
+        {
+            question: "Which of the following HTML elements is used to define the navigation links in a webpage?",
+            options: ["<nav>", "<links>", "<header>", "<section>"],
+            correctAnswer: 0
+        },
+        {
+            question: "Which HTML tag is used to define a form for user input?",
+            options: ["<form>", "<input>", "<fieldset>", "<label>"],
+            correctAnswer: 0
+        },
+        {
+            question: "Which attribute must be added to an HTML <iframe> tag to make it responsive (resize based on screen size)?",
+            options: ["src", "width and height", "frameborder", "allowfullscreen"],
+            correctAnswer: 1
+        },
+        {
+            question: "What is the purpose of the alt attribute in an <img> tag?",
+            options: [
+                "It provides a title for the image.",
+                "It defines the image's width and height.",
+                "It provides an alternative text description for the image if it cannot be displayed.",
+                "It links to a different image if the current image is unavailable."
+            ],
+            correctAnswer: 2
+        },
+        {
+            question: "Which HTML element is used to define the header of a section or page?",
+            options: ["<head>", "<header>", "<section>", "<h1>"],
+            correctAnswer: 1
+        },
+        {
+            question: "How can you make a list of links that are displayed horizontally (side by side) instead of vertically?",
+            options: [
+                "By using the <ul> tag.",
+                "By using the <ol> tag.",
+                "By setting display: inline or display: inline-block on the list items (<li>).",
+                "By using the <link> tag."
+            ],
+            correctAnswer: 2
+        },
+        {
+            question: "Which of the following tags is used to embed an external JavaScript file in an HTML document?",
+            options: [
+                "<js>",
+                "<script src='filename.js'></script>",
+                "<javascript src='filename.js'></javascript>",
+                "<link rel='script' href='filename.js'>"
+            ],
+            correctAnswer: 1
+        },
+        {
+            question: "In HTML5, which of the following elements is used to define a section of navigation links?",
+            options: ["<navigation>", "<nav>", "<links>", "<section>"],
+            correctAnswer: 1
+        },
+        {
+            question: "What is the correct HTML5 element to use for defining a footer for a webpage?",
+            options: ["<footer>", "<bottom>", "<end>", "<section>"],
+            correctAnswer: 0
+        },
+        {
+            question: "What is the default value of the display property for a <div> element in HTML?",
+            options: ["inline", "block", "inline-block", "none"],
+            correctAnswer: 1
+        }
+    ];
 
-let currentQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
 
-let questions = [
-    {
-        question: 'Which of the following HTML elements is used to define the navigation links in a webpage?',
-        choice1: '<nav>',
-        choice2: '<links>',
-        choice3: '<header>',
-        choice4: '<section>',
-        answer: 1,
-    },
-    {
-        question: 'Which HTML tag is used to define a form for user input?',
-        choice1: '<form>',
-        choice2: '<inpuit>',
-        choice3: '<fieldset>',
-        choice4: '<label>',
-        answer: 1,
-    },
-    {
-        question: 'Which attribute must be added to an HTML <iframe> tag to make it responsive (resize based on screen size)?',
-        choice1: 'src',
-        choice2: 'width and height',
-        choice3: 'frameborder',
-        choice4: 'allowfullscreen',
-        answer: 2,
-    },
-    {
-        question: 'What is the purpose of the alt attribute in an <img> tag?',
-        choice1: 'It provides a title for the image.',
-        choice2: 'It defines the dimension of the image.',
-        choice3: 'It provides an alternative text description for the image if it cannot be displayed.',
-        choice4: 'It links to a different image if the current image is unavailable.',
-        answer: 3,
-    },
-    {
-        question: 'Which HTML element is used to define the header of a section or page?',
-        choice1: '<head>',
-        choice2: '<header>',
-        choice3: '<section>',
-        choice4: '<h1>',
-        answer: 2,
-    },
-    {
-        question: 'How can you make a list of links that are displayed horizontally (side by side) instead of vertically?',
-        choice1: 'By using the <ul> tag.',
-        choice2: 'By using the <ol> tag.',
-        choice3: 'By setting display: inline or display: inline-block on the list items (<li>).',
-        choice4: 'By using the <link> tag.',
-        answer: 3,
-    },
-    {
-        question: 'Which of the following tags is used to embed an external JavaScript file in an HTML document?',
-        choice1: '<js>',
-        choice2: '<script src="filename.js"></script>',
-        choice3: '<javascript src="filename.js"></javascript>',
-        choice4: '<link rel="script" href="filename.js">',
-        answer: 2,
-    },
-    {
-        question: 'In HTML5, which of the following elements is used to define a section of navigation links?',
-        choice1: '<navigation>',
-        choice2: '<nav>',
-        choice3: '<links>',
-        choice4: '<section>',
-        answer: 2,
-    },
-    {
-        question: 'What is the correct HTML5 element to use for defining a footer for a webpage?',
-        choice1: '<footer>',
-        choice2: '<bottom>',
-        choice3: '<end>',
-        choice4: '<section>',
-        answer: 1,
-    },
-    {
-        question: 'What is the default value of the display property for a <div> element in HTML?',
-        choice1: 'inline',
-        choice2: 'block',
-        choice3: 'inline-block',
-        choice4: 'none',
-        answer: 2,
-    }
-];
+    let currentQuestionIndex = 0;
+    let score = 0;
 
-const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 10;
 
-startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-};
+    const questionElement = document.getElementById("question");
+    const answerContainers = document.querySelectorAll(".answer-container");
+    const nextButton = document.querySelector(".next-button");
+    const backButton = document.querySelector(".back-button");
 
-getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score);
 
-        // return window.location.assign('/end.html');
+    function loadQuestion() {
+        const currentQuestion = questions[currentQuestionIndex];
+        questionElement.textContent = currentQuestion.question;
+
+
+        answerContainers.forEach((container, index) => {
+            const option = container.querySelector(".answer-option");
+            container.classList.remove("correct", "incorrect"); // Reset styles
+            container.style.pointerEvents = "auto"; // Re-enable clicks
+            option.textContent = currentQuestion.options[index]; // Set the option text
+
+
+            // Remove old click event and add a new one
+            container.removeEventListener("click", handleContainerClick);
+            container.addEventListener("click", () => handleContainerClick(index));
+        });
     }
 
-    questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question;
+    function handleContainerClick(selectedIndex) {
+        const currentQuestion = questions[currentQuestionIndex];
+        const correctIndex = currentQuestion.correctAnswer;
 
-    choices.forEach(choice => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
-    });
 
-    availableQuestions.splice(questionsIndex, 1);
+        answerContainers.forEach((container, index) => {
+            if (index === correctIndex) {
+                container.classList.add("correct"); // Green background for correct
+            } else if (index === selectedIndex) {
+                container.classList.add("incorrect"); // Red background for incorrect
+            }
+        });
 
-    acceptingAnswers = true;
-};
 
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-        if (!acceptingAnswers) return;
-
-        acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
-
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
-        if (classToApply === 'correct') {
-            incrementScore(SCORE_POINTS);
+        if (selectedIndex === correctIndex) {
+            score++;
         }
 
-        selectedChoice.parentElement.classList.add(classToApply);
 
-        setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
+        // Disable further clicks for this question
+        answerContainers.forEach(container => (container.style.pointerEvents = "none"));
+    }
 
-        }, 1000);
+
+    nextButton.addEventListener("click", () => {
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            loadQuestion();
+        } else {
+            // Redirect to results page
+            localStorage.setItem("quizScore", score); // Save score in localStorage
+            localStorage.setItem("totalQuestions", questions.length);
+            window.location.href = "results.html"; // Change to your results page
+        }
     });
+
+
+    backButton.addEventListener("click", () => {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            loadQuestion();
+        }
+    });
+
+
+    // Load the first question on page load
+    loadQuestion();
 });
 
-incrementScore = num => {
-    score += num;
-    scoreText.innerText = score;
-};
 
-startGame();
