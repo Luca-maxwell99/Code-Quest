@@ -83,7 +83,7 @@ The user can navigate back to the homepage of the site at any point using the ho
 
 There is an instruction modal fixed to the top of every page on the website so that the user can always check the instructions without interrupting their quiz. The modal was built using Bootstrap then customised to match Code Quest branding.
 
-![Code Quest instruction modal](assets/images/nav-bar-feature.png)
+![Code Quest instruction modal](assets/images/instructions-modal-feature.png)
 
 #### Game Choice
 
@@ -107,11 +107,12 @@ After answering the last question the user is taken to the final page. The page 
 
 For our project, we decided to deliver a simple yet effective MVP, given our time frame. Through disscusion there were many points, which we felt could be useful as future features. Here are some examples of what we came up with.
 
-* User authentication - allowing site visitors to create accounts and return to progress.
+* User authentication - Allowing site visitors to create accounts and return to progress.
 * Quiz difficulty - We purposefully used a range of beginner questions in our quiz. In the future it would be benefical for returning users to select harder difficulties. 
 * Leaderboard - To log your score and compare scores to peers using the quiz aswell. 
 * Timed trials - Adding a timing feature would add another aspect to the quiz.
 * Light mode - For users to toggle between whichever colour mode they prefer for their comfort.
+* Back and next button fix - There is a glitch in the hover styling on the back and next buttons. They function correctly however a future change would fix the appearance.
 
 ## Built With
 
@@ -155,9 +156,19 @@ No errors in CSS validation
 
 ### Lighthouse
 
-![Lighthouse testing mobile](assets/...)
+All categories 85-100 with Lighthouse testing across pages on both desktop and mobile.
 
-![Lighthouse testing desktop](assets/...)
+![Lighthouse testing desktop](assets/images/homepage-lighthouse-desktop.png)
+
+![Lighthouse testing mobilep](assets/images/homepage-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/game-lightouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/game-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/results-lighthouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/results-lighthouse-mobile.png)
 
 ## Deployment
 
