@@ -18,7 +18,7 @@ Given the timeframe of this hackathon we prioritised delivering a minimum viable
 
 ## UX Design
 
-#### Site Owner’s Goal
+### Site Owner’s Goal
 
 To create an engaging online quiz that helps beginner coders solidify their understanding of front-end web development languages through interactive quizzes. By providing immediate feedback and a fun learning experience, Code Quest aims to empower learners to build a strong foundation in HTML, CSS, and JavaScript.
 
@@ -73,34 +73,46 @@ Code Quest is a site that is responsive across all device sizes. The layout is a
 ## Features
 ### Existing Features
 
+#### Navigation
+
+The user can navigate back to the homepage of the site at any point using the home icon on the top left. This simple navigation ensures the user experience of the quiz is not overcomplicated. 
+
+![Code Quest navigation bar](assets/images/nav-bar-feature.png)
+
 #### Instruction modal
 
 There is an instruction modal fixed to the top of every page on the website so that the user can always check the instructions without interrupting their quiz. The modal was built using Bootstrap then customised to match Code Quest branding.
 
-#### Navigation
-
-The user can navigate back to the homepage of the site at any point using the home icon on the top left. This simple navigation ensures the user experience of the quiz is not overcomplicated. 
+![Code Quest instruction modal](assets/images/instructions-modal-feature.png)
 
 #### Game Choice
 
 The homepage of the site allows the user to pick the language they would like to be quizzed on so that they can customise their learning to suit their needs. Each button then takes the user to the relevant quiz.
 
+![Code Quest game choice](assets/images/choose-game-feature.png)
+
 #### Game Active
 
-The active quiz page features a question with four multiple choice options for answers. If the user selects the correct answer it will turn green to signify it being correct. If the user selects the wrong answer it will turn red to signify it being incorrect, then the correct answer will turn green so that they can learn the correct answer. There are backwards and forwards buttons to move throughout the questions.
+The active quiz page features a question with four multiple choice options for answers. If the user selects the correct answer it will turn green to signify it being correct. If the user selects the wrong answer it will turn red to signify it being incorrect, then the correct answer will turn green so that they can learn the correct answer. There are backwards and forwards buttons to move throughout the questions. During the quiz the user can also see the progress bar change as they move forward.
+
+![Code Quest navigation bar](assets/images/active-game-feature.png)
 
 #### Game Results
 
-...
+After answering the last question the user is taken to the final page. The page congratulates the user and has a try again button to take them back to the homepage.
+
+![Code Quest navigation bar](assets/images/try-again-feature.png)
 
 ### Future Changes
 
 For our project, we decided to deliver a simple yet effective MVP, given our time frame. Through disscusion there were many points, which we felt could be useful as future features. Here are some examples of what we came up with.
 
-* User authentication - allowing site visitors to create accounts and return to progress.
-* Quiz difficulty - We purpsoefully used a range of beginner questions in our quiz. In the future it would be benefical for returning users to select harder difficulties. 
+* User authentication - Allowing site visitors to create accounts and return to progress.
+* Quiz difficulty - We purposefully used a range of beginner questions in our quiz. In the future it would be benefical for returning users to select harder difficulties. 
 * Leaderboard - To log your score and compare scores to peers using the quiz aswell. 
 * Timed trials - Adding a timing feature would add another aspect to the quiz.
+* Light mode - For users to toggle between whichever colour mode they prefer for their comfort.
+* Back and next button fix - There is a glitch in the hover styling on the back and next buttons. They function correctly however a future change would fix the appearance.
 
 ## Built With
 
@@ -115,32 +127,49 @@ For our project, we decided to deliver a simple yet effective MVP, given our tim
 * Google Fonts
 * AI
 
-### AI
-...
+### Artifical Intelligence (AI)
+This project combined human experience with AI in several aspects of its development to enhance efficiency:
+
+* User Story Generation: AI assisted in generating a comprehensive set of user stories that outlined user needs and functionalities. This accelerated the process of defining the quiz's functionalities and ensured a user-centric approach.
+* Quiz Content Creation: AI was employed to generate a pool of questions for the quiz. This not only saved time but also ensured a wider variety of questions, potentially leading to a more engaging learning experience.
+* Code Assistance: AI was used to help generate code in a short time frame across HTML, CSS, and JavaScript. Doing so improved the site's responsiveness across all devices and the quiz functionality for a better user experience.
+* Debugging Code: AI was leveraged for debugging code and suggesting optimisations. This expedited the development process and potentially improved code quality.
 
 ## Testing
 
 To ensure the success of the site there was testing and debugging carried out throughout the process both manually and with external tools. This process means that the site is now successfully deployed and has passed testing.
 
 ### Validator Testing
-...
 
-![HTML testing](assets/...)
+Site passes HTML validation. This is the case across all site pages.
 
-...
+![HTML testing](assets/images/index.html-validation.png)
 
-![CSS testing](assets/images/code-quest-css-validation.jpg)
+Site passes CSS validation.
+
+![CSS testing](assets/images/CSS-validation.png)
 
 ### JavaScript Testing
-...
 
-![JS testing](assets/...)
+Site passes JavaScript validation.
+
+![JS testing](assets/images/javascript-validation.png)
 
 ### Lighthouse
 
-![Lighthouse testing mobile](assets/...)
+All categories 85-100 with Lighthouse testing across pages on both desktop and mobile.
 
-![Lighthouse testing desktop](assets/...)
+![Lighthouse testing desktop](assets/images/homepage-lighthouse-desktop.png)
+
+![Lighthouse testing mobilep](assets/images/homepage-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/game-lightouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/game-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/results-lighthouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/results-lighthouse-mobile.png)
 
 ## Deployment
 
@@ -162,7 +191,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * The initial GitHub project was built using the Code Institute template to start.
 * The modal was built with Bootstrap features.
 * The layout of the quiz page was from a <a href="https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=PL7oCkMy5aVzUQOwGt9a60pAuOkSlNPaeU&ab_channel=BrianDesign" target="_blank"> Brian Design tutorial</a> on YouTube.
-* ...
+* Various steps used the support of AI, detailed in the AI section above.
 
 ### Content
 * The question content was generated using AI.
