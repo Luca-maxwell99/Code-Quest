@@ -682,6 +682,7 @@ h1 {
     .center-image {
         justify-content: center;
     }
+}
 
     /* Tablets */
     @media (min-width: 577px) and (max-width: 768px) {
