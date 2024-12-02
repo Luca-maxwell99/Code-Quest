@@ -156,9 +156,19 @@ No errors in CSS validation
 
 ### Lighthouse
 
-![Lighthouse testing mobile](assets/...)
+All categories 90-100 with Lighthouse testing across pages on both desktop and mobile.
 
-![Lighthouse testing desktop](assets/...)
+![Lighthouse testing desktop](assets/images/homepage-lighthouse-desktop.png)
+
+![Lighthouse testing mobilep](assets/images/homepage-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/game-lightouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/game-lighthouse-mobile.png)
+
+![Lighthouse testing desktop](assets/images/results-lighthouse-desktop.png)
+
+![Lighthouse testing mobile](assets/images/results-lighthouse-mobile.png)
 
 ## Deployment
 
