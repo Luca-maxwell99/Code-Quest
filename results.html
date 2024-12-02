@@ -25,7 +25,41 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i id="house-icon" class="fa-solid fa-house-chimney-user"></i></a></li>
-                <li><a id="instructions" href="">Instructions</a></li>
+                <li>
+
+                    <button type="button" id="instructions" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Instructions
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 id="exampleModalLabel"> Quiz Instructions</h1> <span><i id="modal-icon"
+                                            class="fa-solid fa-person-chalkboard"></i></span>
+
+                                </div>
+                                <div>
+                                    <p class="modal-body">Welcome to our Quiz! The instructions are pretty straight
+                                        forward! Firstly select your quiz type below. Complete the 10 questions that
+                                        follow, remember, no cheating!
+                                        <br>
+                                        <br>
+                                        Finally you can view your results and your username. Good luck!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
             </ul>
         </nav>
     </header>
@@ -60,6 +94,14 @@
     <!-- Link to external JavaScript -->
 
     <script src="game.js"></script>
+
+      <!-- Font awesome -->
+      <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
+      <!-- Boostrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+
 </body>
 
 </html>
